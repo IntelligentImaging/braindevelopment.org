@@ -4,10 +4,12 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-primary rounded-md flex items-center justify-center">
-                <span className="text-white font-bold text-sm">AI</span>
-              </div>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src="/lovable-uploads/b499ffa1-7778-43de-b318-948fe9d9bfea.png" 
+                alt="Fetal Brain Imaging Lab Logo" 
+                className="w-10 h-10"
+              />
               <div>
                 <h3 className="text-lg font-semibold">Fetal Brain Imaging Lab</h3>
                 <p className="text-xs text-background/70">AI-Powered Research</p>
