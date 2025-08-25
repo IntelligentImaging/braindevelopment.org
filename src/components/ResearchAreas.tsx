@@ -1,56 +1,62 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
+import fetalMRIImg from "@/assets/Fetal MRI.png";
+import automatedSegmentationImg from "@/assets/automated segmentation.png";
+import fetalBrainAtlasesImg from "@/assets/Fetal brain atlases.png";
+import diffusionWeightedMRIImg from "@/assets/Diffusion-weighted MRI.png";
+
 const ResearchAreas = () => {
   const areas = [
     {
-      title: "Neural Development Analysis",
+      title: "Fetal MRI",
       description: "Advanced AI algorithms for tracking fetal brain development patterns and identifying potential abnormalities early in pregnancy.",
       technologies: ["Deep Learning", "Computer Vision", "3D Reconstruction"],
-      icon: "🧠"
+      icon: fetalMRIImg,
     },
     {
       title: "Automated Segmentation",
       description: "Machine learning models for precise anatomical segmentation of fetal brain structures from MRI and ultrasound data.",
       technologies: ["U-Net Architecture", "Semantic Segmentation", "Medical Imaging"],
-      icon: "🔬"
+      icon: automatedSegmentationImg,
     },
     {
-      title: "Predictive Modeling",
+      title: "Fetal brain atlases",
       description: "Developing predictive models to assess neurodevelopmental outcomes and guide clinical decision-making.",
       technologies: ["Statistical Learning", "Time Series Analysis", "Risk Assessment"],
-      icon: "📊"
+      icon: fetalBrainAtlasesImg,
     },
     {
-      title: "Multi-Modal Integration",
+      title: "Diffusion-weighted MRI",
       description: "Combining multiple imaging modalities to create comprehensive fetal brain assessments using AI fusion techniques.",
       technologies: ["Data Fusion", "Multi-Modal AI", "Image Registration"],
-      icon: "🔗"
-    }
+      icon: diffusionWeightedMRIImg,
+    },
   ];
 
   return (
     <section id="research" className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-foreground">
-            Research Areas
-          </h2>
+          <h2 className="text-4xl font-bold mb-4 text-foreground">Research Areas</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Our interdisciplinary team focuses on pioneering AI applications 
-            in fetal neuroimaging to improve prenatal diagnosis and care.
+             Our research focuses on medical image computing, using machine learning to improve MRI and fetal imaging. We aim to enhance diagnostic accuracy and clinical decision-making with advanced computational methods.
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 gap-8">
           {areas.map((area, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className="hover:shadow-medical transition-all duration-300 hover:scale-105 bg-card/80 backdrop-blur-sm"
             >
               <CardHeader>
                 <div className="flex items-center gap-3 mb-2">
-                  <span className="text-3xl">{area.icon}</span>
+                  <img
+                    src={area.icon}
+                    alt={`${area.title} icon`}
+                    className="w-28 h-28 object-contain"
+                  />
                   <CardTitle className="text-xl text-foreground">{area.title}</CardTitle>
                 </div>
                 <CardDescription className="text-muted-foreground leading-relaxed">
@@ -60,9 +66,9 @@ const ResearchAreas = () => {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {area.technologies.map((tech, techIndex) => (
-                    <Badge 
-                      key={techIndex} 
-                      variant="secondary" 
+                    <Badge
+                      key={techIndex}
+                      variant="secondary"
                       className="bg-primary/10 text-primary hover:bg-primary/20"
                     >
                       {tech}

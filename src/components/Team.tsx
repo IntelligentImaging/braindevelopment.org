@@ -1,35 +1,48 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
+// Import team member images
+import aliImg from "../assets/ali.png";
+import mahdiImg from "../assets/mahdi.png";
+import qinqinImg from "../assets/qinqin.png";
+import xinImg from "../assets/xin.png";
+import Rylee from "../assets/Rylee.jpg";
 const Team = () => {
   const members = [
     {
-      name: "Dr. Sarah Chen",
+      name: "Ali Gholipour, PhD",
       role: "Principal Investigator",
-      expertise: ["Fetal Medicine", "AI Research", "Neuroimaging"],
-      education: "MD, PhD - Harvard Medical School",
-      bio: "Leading expert in prenatal neuroimaging with 15+ years of research experience."
+      expertise: ["Machine Learning", "Medical Imaging", "Fetal MRI"],
+      image: aliImg,
+      bio: "Ali Gholipour is Professor of Radiological Sciences, and Electrical Engineering and Computer Science at the University of California Irvine (UCI), Founder and Director of the Intelligent Medical Imaging Research Lab (aka IMAGINE), and Scientific Director of MRI AI Application in the Center for Artificial Intelligence in Diagnostic Medicine (CAIDM) at UCI. He was a faculty at Boston Children’s Hospital and Harvard Medical School from 2010 to 2024 before joining UCI. He received all his degrees in Electrical Engineering (BSc’2001 and MSc’2003 from the University of Tehran, and PhD’2008 from the University of Texas at Dallas), and completed a postdoctoral training in medical imaging at Boston Children’s Hospital, Harvard Medical School in 2010. He is a Senior Member of the IEEE (Institute of Electrical and Electronics Engineers), a member of the International Society of Magnetic Resonance in Medicine (ISMRM), a member of Medical Image Computing and Computer Assisted Intervention (MICCAI); and an Associate Editor for IEEE Transactions on Medical Imaging, and Medical Image Analysis."
     },
     {
-      name: "Dr. Michael Rodriguez",
-      role: "Senior AI Researcher",
-      expertise: ["Machine Learning", "Computer Vision", "Medical Imaging"],
-      education: "PhD Computer Science - MIT",
-      bio: "Specializes in developing deep learning algorithms for medical image analysis."
+      name: "Mahdi Bagheri, PhD",
+      role: "Postdoctoral Research Fellow",
+      expertise: ["Machine Learning", "Medical Imaging", "Causality"],
+      image: mahdiImg,
+      bio: "Mahdi Bagheri is a postdoctoral researcher at the University of California Irvine, developing machine learning methods for time series data with applications in fMRI. Previously, he was a postdoctoral researcher at Harvard Medical School, working with Professor Ali Gholipour. He earned all his degrees in Electrical Engineering and defended his Ph.D. at the University of Tehran in 2023, focusing on Bayesian causal discovery and dynamic causal learning algorithms to analyze brain data and uncover the brain’s causal connectome using fMRI and DTI data. He is passionate about translating science into practical products and is always a fan of freshly brewed tea!"
     },
     {
-      name: "Dr. Emily Johnson",
-      role: "Clinical Research Coordinator",
-      expertise: ["Clinical Trials", "Data Analysis", "Patient Care"],
-      education: "MD - Johns Hopkins University",
-      bio: "Bridges clinical practice with research to ensure real-world applicability."
+      name: "Qinqin Yang, PhD",
+      role: "Postdoctoral Research Fellow",
+      expertise: ["MRI", "Quantitative MRI", "Deep learning", "MRI simulation", "Fetal MRI"],
+      image: qinqinImg,
+      bio: "Qinqin Yang is a postdoctoral researcher at the University of California, Irvine. He earned his Ph.D. in 2024 from Xiamen University, where he received training in MRI physics and artificial intelligence. His research focuses on developing novel motion-robust MRI sequences and reconstruction algorithms. Additionally, he explores the use of physics-based simulations to generate training data for deep neural networks. Since joining Ali’s team, his work has been dedicated to advancing innovative MRI techniques for fetal and neonatal imaging, contributing to a deeper understanding of early human brain development."
     },
     {
-      name: "Alex Park",
-      role: "Research Engineer",
-      expertise: ["Software Development", "Cloud Computing", "Data Pipeline"],
-      education: "MS Engineering - Stanford University",
-      bio: "Develops and maintains the technical infrastructure for our AI platforms."
+      name: "Xin Wang, MD",
+      role: "Visiting Scholar",
+      expertise: [ ],
+      image: xinImg,
+      bio: "Xin Wang is a visiting scholar at the University of California, Irvine, focusing on advanced multimodal MRI studies of neonatal brain development. A dedicated radiologist and researcher, she serves as a diagnostic radiologist at Children’s Hospital of Nanjing, where she specializes in pediatric neuroimaging and brain functional studies. Prior to joining UCI, Wang earned her MD in 2011 and completed her Master of Science in Clinical Medicine at Nanjing University in 2014. Her work has been supported by the National Natural Science Foundation of China, recognizing her innovative contributions to understanding pediatric brain connectivity and function. Passionate about bridging clinical practice with cutting-edge research, she strives to translate imaging advancements into improved diagnostic tools for pediatric populations."
+    },
+      {
+      name: "Rylee Kubo, MSc",
+      role: "Research Assistant",
+      expertise: [], // ← edit these
+      image: Rylee,
+      bio: "Rylee graduated from the University of California, Los Angeles with a B.S. in Computational and Systems Biology with a concentration in bioinformatics. Her growing interest in medical imaging led her to intern at Cedars-Sinai Medical Center in their neurology department where she conducted quantitative MRI research relating to multiple sclerosis. In the IMAGINE lab, she assists in research coordination and exploring AI applications to medical imaging. Outside of research, she is involved in the Japanese American community and is passionate about promoting cultural pride through music."
     }
   ];
 
@@ -54,24 +67,23 @@ const Team = () => {
             >
               <CardHeader>
                 <div className="flex items-start justify-between mb-2">
-                  <div>
-                    <CardTitle className="text-xl text-foreground mb-1">
-                      {member.name}
-                    </CardTitle>
-                    <CardDescription className="text-primary font-medium">
-                      {member.role}
-                    </CardDescription>
-                  </div>
-                  <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-xl">
-                      {member.name.split(' ').map(n => n[0]).join('')}
-                    </span>
+                  <div className="flex items-center gap-4">
+                    <img 
+                      src={member.image} 
+                      alt={member.name} 
+                      className="w-16 h-16 rounded-full object-cover"
+                    />
+                    <div>
+                      <CardTitle className="text-xl text-foreground mb-1">
+                        {member.name}
+                      </CardTitle>
+                      <CardDescription className="text-primary font-medium">
+                        {member.role}
+                      </CardDescription>
+                    </div>
                   </div>
                 </div>
-                <p className="text-sm text-muted-foreground mb-3">
-                  {member.education}
-                </p>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed mt-4">
                   {member.bio}
                 </p>
               </CardHeader>
@@ -100,3 +112,10 @@ const Team = () => {
 };
 
 export default Team;
+
+
+
+
+
+
+

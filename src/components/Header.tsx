@@ -1,6 +1,13 @@
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
+  const scrollToContact = () => {
+    const el = document.getElementById("contact");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b z-50">
       <div className="container mx-auto px-4 py-4">
@@ -15,7 +22,7 @@ const Header = () => {
               <h1 className="text-lg font-semibold text-foreground">
                 Fetal Brain Imaging Lab
               </h1>
-              <p className="text-xs text-muted-foreground">AI-Powered Research</p>
+              <p className="text-xs text-muted-foreground"></p>
             </div>
           </div>
           
@@ -24,7 +31,7 @@ const Header = () => {
               Research
             </a>
             <a href="#tools" className="text-foreground hover:text-primary transition-colors">
-              AI Tools
+              Code
             </a>
             <a href="#team" className="text-foreground hover:text-primary transition-colors">
               Team
@@ -32,7 +39,7 @@ const Header = () => {
             <a href="#publications" className="text-foreground hover:text-primary transition-colors">
               Publications
             </a>
-            <Button variant="medical" size="sm">
+            <Button variant="medical" size="sm" onClick={scrollToContact}>
               Contact Us
             </Button>
           </nav>
