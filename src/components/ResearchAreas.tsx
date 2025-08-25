@@ -2,9 +2,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 
 import fetalMRIImg from "@/assets/Fetal MRI.png";
-import automatedSegmentationImg from "@/assets/automated segmentation.png";
-import fetalBrainAtlasesImg from "@/assets/Fetal brain atlases.png";
-import diffusionWeightedMRIImg from "@/assets/Diffusion-weighted MRI.png";
+import automatedSegmentationImg from "@/assets/automated segmentation.jpg";
+import fetalBrainAtlasesImg from "@/assets/Fetal brain atlases.jpg";
+import diffusionWeightedMRIImg from "@/assets/Diffusion-weighted MRI.jpg";
 
 const ResearchAreas = () => {
   const areas = [

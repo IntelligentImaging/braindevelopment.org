@@ -2,10 +2,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 
 // Import team member images
-import aliImg from "../assets/ali.png";
-import mahdiImg from "../assets/mahdi.png";
-import qinqinImg from "../assets/qinqin.png";
-import xinImg from "../assets/xin.png";
+import aliImg from "../assets/Ali.jpg";
+import mahdiImg from "../assets/Mahdi.jpg";
+import qinqinImg from "../assets/qinqin.jpg";
+import xinImg from "../assets/xin.jpg";
 import Rylee from "../assets/Rylee.jpg";
 const Team = () => {
   const members = [
