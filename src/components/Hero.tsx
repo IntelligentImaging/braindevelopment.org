@@ -2,7 +2,10 @@ import heroImage from "@/assets/hero-brain-imaging.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      className="relative min-h-screen flex items-center justify-center overflow-hidden
+                 pt-24 md:pt-32 scroll-mt-24 md:scroll-mt-32"
+    >
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
