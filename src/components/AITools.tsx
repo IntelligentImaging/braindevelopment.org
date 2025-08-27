@@ -14,24 +14,24 @@ const AITools = () => {
   const tools: Tool[] = [
     {
       name: "CRL-2025",
-      description: "Automated segmentation + spatiotemporal fetal MRI atlas with high‑quality labels.",
+      description: "Automated segmentation + spatiotemporal fetal MRI atlas with high-quality labels.",
       features: ["Multi-structure segmentation", "Spatiotemporal templates", "Quality metrics"],
       link: "https://github.com/IntelligentImaging/CRL-2025",
-      status: "",
+      status: "Production",
     },
     {
       name: "HAITCH",
-      description: "Distortion + motion correction framework for multi‑shell fetal diffusion MRI.",
-      features: ["Blip‑reversed dual‑echo", "Advanced motion correction", "Public pipeline"],
+      description: "Distortion + motion correction framework for multi-shell fetal diffusion MRI.",
+      features: ["Blip-reversed dual-echo", "Advanced motion correction", "Public pipeline"],
       link: "https://github.com/IntelligentImaging/HAITCH",
-      status: "",
+      status: "Beta",
     },
     {
       name: "FetalR2Star",
-      description: "Model‑based multi‑echo radial FLASH reconstruction for R2* mapping.",
-      features: ["Calibrationless reconstruction", "Water/Fat/R2*/B0 maps", "Phantom + in‑vivo"],
+      description: "Model-based multi-echo radial FLASH reconstruction for R2* mapping.",
+      features: ["Calibrationless reconstruction", "Water/Fat/R2*/B0 maps", "Phantom + in-vivo"],
       link: "https://github.com/IntelligentImaging/FetalR2Star",
-      status: "",
+      status: "Development",
     },
   ];
 
@@ -55,7 +55,7 @@ const AITools = () => {
           <div>
             <h2 className="text-4xl font-bold mb-6 text-foreground">Code</h2>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Our open‑source tools advance fetal brain imaging with robust reconstruction,
+              Our open-source tools advance fetal brain imaging with robust reconstruction,
               segmentation, and analysis workflows.
             </p>
 
@@ -81,7 +81,6 @@ const AITools = () => {
                       ))}
                     </ul>
 
-                    {/* View Repo button */}
                     <a href={tool.link} target="_blank" rel="noopener noreferrer">
                       <Button variant="outline" size="sm">View Repo</Button>
                     </a>
@@ -98,10 +97,12 @@ const AITools = () => {
           </div>
 
           <div className="relative">
-            <img
-              src={labImage}
-              alt="AI Lab Equipment"
+            <img 
+              src={labImage} 
+              alt="AI Lab Equipment" 
               className="rounded-lg shadow-medical w-full h-auto"
+              loading="lazy"
+              decoding="async"
             />
             <div className="absolute inset-0 bg-gradient-neural opacity-20 rounded-lg" />
           </div>

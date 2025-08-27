@@ -1,12 +1,11 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-// Import team member images
-import aliImg from "../assets/Ali.jpg";
-import mahdiImg from "../assets/Mahdi.jpg";
-import qinqinImg from "../assets/qinqin.jpg";
-import xinImg from "../assets/xin.jpg";
-import Rylee from "../assets/Rylee.jpg";
+import aliImg from "../assets/ali.png";
+import mahdiImg from "../assets/mahdi.png";
+import qinqinImg from "../assets/qinqin.png";
+import xinImg from "../assets/xin.png";
+
 const Team = () => {
   const members = [
     {
@@ -33,16 +32,9 @@ const Team = () => {
     {
       name: "Xin Wang, MD",
       role: "Visiting Scholar",
-      expertise: [ ],
+      expertise: [ "Cloud Computing", "Data Pipeline"],
       image: xinImg,
       bio: "Xin Wang is a visiting scholar at the University of California, Irvine, focusing on advanced multimodal MRI studies of neonatal brain development. A dedicated radiologist and researcher, she serves as a diagnostic radiologist at Children’s Hospital of Nanjing, where she specializes in pediatric neuroimaging and brain functional studies. Prior to joining UCI, Wang earned her MD in 2011 and completed her Master of Science in Clinical Medicine at Nanjing University in 2014. Her work has been supported by the National Natural Science Foundation of China, recognizing her innovative contributions to understanding pediatric brain connectivity and function. Passionate about bridging clinical practice with cutting-edge research, she strives to translate imaging advancements into improved diagnostic tools for pediatric populations."
-    },
-      {
-      name: "Rylee Kubo, MSc",
-      role: "Research Assistant",
-      expertise: [], // ← edit these
-      image: Rylee,
-      bio: "Rylee graduated from the University of California, Los Angeles with a B.S. in Computational and Systems Biology with a concentration in bioinformatics. Her growing interest in medical imaging led her to intern at Cedars-Sinai Medical Center in their neurology department where she conducted quantitative MRI research relating to multiple sclerosis. In the IMAGINE lab, she assists in research coordination and exploring AI applications to medical imaging. Outside of research, she is involved in the Japanese American community and is passionate about promoting cultural pride through music."
     }
   ];
 
@@ -50,9 +42,7 @@ const Team = () => {
     <section id="team" className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-foreground">
-            Our Research Team
-          </h2>
+          <h2 className="text-4xl font-bold mb-4 text-foreground">Our Research Team</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             A multidisciplinary team of clinicians, researchers, and engineers 
             working together to advance fetal brain imaging through AI innovation.
@@ -72,6 +62,8 @@ const Team = () => {
                       src={member.image} 
                       alt={member.name} 
                       className="w-16 h-16 rounded-full object-cover"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <div>
                       <CardTitle className="text-xl text-foreground mb-1">
@@ -112,10 +104,3 @@ const Team = () => {
 };
 
 export default Team;
-
-
-
-
-
-
-
