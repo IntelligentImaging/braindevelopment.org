@@ -1,10 +1,11 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-import aliImg from "../assets/ali.png";
-import mahdiImg from "../assets/mahdi.png";
-import qinqinImg from "../assets/qinqin.png";
-import xinImg from "../assets/xin.png";
+import aliImg from "../assets/Ali.jpg";
+import mahdiImg from "../assets/Mahdi.jpg";
+import qinqinImg from "../assets/qinqin.jpg";
+import xinImg from "../assets/xin.jpg";
+import ryleeImg from "../assets/Rylee.jpg"; // ✅ new import
 
 const Team = () => {
   const members = [
@@ -32,9 +33,16 @@ const Team = () => {
     {
       name: "Xin Wang, MD",
       role: "Visiting Scholar",
-      expertise: [ "Cloud Computing", "Data Pipeline"],
+      expertise: [],
       image: xinImg,
       bio: "Xin Wang is a visiting scholar at the University of California, Irvine, focusing on advanced multimodal MRI studies of neonatal brain development. A dedicated radiologist and researcher, she serves as a diagnostic radiologist at Children’s Hospital of Nanjing, where she specializes in pediatric neuroimaging and brain functional studies. Prior to joining UCI, Wang earned her MD in 2011 and completed her Master of Science in Clinical Medicine at Nanjing University in 2014. Her work has been supported by the National Natural Science Foundation of China, recognizing her innovative contributions to understanding pediatric brain connectivity and function. Passionate about bridging clinical practice with cutting-edge research, she strives to translate imaging advancements into improved diagnostic tools for pediatric populations."
+    },
+    {
+      name: "Rylee Kubo",
+      role: "Research Assistant",
+      expertise: ["Computational Biology", "Bioinformatics", "Medical Imaging"],
+      image: ryleeImg,
+      bio: "Rylee graduated from the University of California, Los Angeles with a B.S. in Computational and Systems Biology with a concentration in bioinformatics. Her growing interest in medical imaging led her to intern at Cedars-Sinai Medical Center in their neurology department where she conducted quantitative MRI research relating to multiple sclerosis. In the IMAGINE lab, she assists in research coordination and exploring AI applications to medical imaging. Outside of research, she is involved in the Japanese American community and is passionate about promoting cultural pride through music."
     }
   ];
 
