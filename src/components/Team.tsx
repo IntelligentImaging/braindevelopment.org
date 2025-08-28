@@ -50,9 +50,9 @@ const Team = () => {
     <section id="team" className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-foreground">Our Research Team</h2>
+          <h2 className="text-4xl font-bold mb-4 text-foreground">Our Research Group</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A multidisciplinary team of clinicians, researchers, and engineers 
+            A multidisciplinary team of researchers, and engineers, and clinicians
             working together to advance fetal brain imaging through AI innovation.
           </p>
         </div>
