@@ -1,11 +1,18 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
+// Team member images
 import aliImg from "../assets/Ali.jpg";
 import mahdiImg from "../assets/Mahdi.jpg";
 import qinqinImg from "../assets/qinqin.jpg";
 import xinImg from "../assets/xin.jpg";
-import ryleeImg from "../assets/Rylee.jpg"; // ✅ new import
+import ryleeImg from "../assets/Rylee.jpg";
+
+// Collaborator images (make sure these files exist in src/assets/)
+import camiloImg from "../assets/Jaimes.jpeg";
+import jalilImg from "../assets/Razavi.jpeg";
+import caitlinImg from "../assets/Caitlin.webp";
+import lanaImg from "../assets/Pierotich.jpeg";
 
 const Team = () => {
   const members = [
@@ -46,17 +53,42 @@ const Team = () => {
     }
   ];
 
+  const collaborators = [
+    {
+      name: "Dr. Camilo Jaimes, MD",
+      affiliation: "Chief Pediatric Neuroradiology & Physician Scientist- Massachusetts General Hospital and Harvard Medical School",
+      image: camiloImg
+    },
+    {
+      name: "Dr. Jalil Razavi, PhD",
+      affiliation: "Assistant Professor at State University of New York at Binghamton",
+      image: jalilImg
+    },
+    {
+      name: "Dr. Caitlin Rollins, MD",
+      affiliation: "Associate Professor of Neurology, Harvard Medical School,",
+      image: caitlinImg
+    },
+    {
+      name: "Dr. Lana Vasung, MD",
+      affiliation: " Boston Children’s Hospital and Harvard Medical School",
+      image: lanaImg
+    }
+  ];
+
   return (
     <section id="team" className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4">
+        {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-foreground">Our Research Group</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A multidisciplinary team of researchers, and engineers, and clinicians
+            A multidisciplinary group of clinicians, researchers, and engineers 
             working together to advance fetal brain imaging through AI innovation.
           </p>
         </div>
         
+        {/* Team members grid */}
         <div className="grid md:grid-cols-2 gap-8">
           {members.map((member, index) => (
             <Card 
@@ -105,6 +137,31 @@ const Team = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Collaborators */}
+        <div className="mt-20">
+          <h3 className="text-2xl font-semibold text-foreground text-center mb-8">
+            Collaborators
+          </h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {collaborators.map((c, i) => (
+              <div
+                key={i}
+                className="flex flex-col items-center text-center bg-card/60 rounded-lg p-4 hover:shadow-medical transition"
+              >
+                <img
+                  src={c.image}
+                  alt={c.name}
+                  className="w-20 h-20 rounded-full object-cover mb-3"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <p className="text-sm font-medium text-foreground leading-tight">{c.name}</p>
+                <p className="text-xs text-muted-foreground">{c.affiliation}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
