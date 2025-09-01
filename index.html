@@ -1,34 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IMAGINE Research Lab</title>
-    <meta
-      name="description"
-      content="Intelligent Medical Imaging (IMAGINE) Research Lab"
-    />
-    <meta name="author" content="IMAGINE Research Lab" />
+import { Suspense, lazy } from "react";
 
-    <!-- Open Graph (social sharing) -->
-    <meta property="og:title" content="IMAGINE Research Lab" />
-    <meta
-      property="og:description"
-      content="Intelligent Medical Imaging (IMAGINE) Research Lab"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/logo.jpg" />
+// Eager (critical) sections
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="/logo.jpg" />
+// Lazy-load below-the-fold sections
+const ResearchAreas = lazy(() => import("@/components/ResearchAreas"));
+const AITools       = lazy(() => import("@/components/AITools"));
+const Team          = lazy(() => import("@/components/Team"));
+const Publications  = lazy(() => import("@/components/Publications"));
+const Contact       = lazy(() => import("@/components/Contact"));
+const Footer        = lazy(() => import("@/components/Footer"));
 
-    <!-- ✅ Custom favicon -->
-    <link rel="icon" type="image/jpg" href="/logo.jpg" />
-  </head>
+const Index = () => {
+  return (
+    <>
+      <Header />
+      <Hero />
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+      {/* Everything below folds in as separate chunks after the hero is visible */}
+      <Suspense
+        fallback={
+          <div className="py-20 text-center text-sm text-muted-foreground">
+            Loading…
+          </div>
+        }
+      >
+        <ResearchAreas />
+        <AITools />
+        <Team />
+        <Publications />
+        <Contact />
+        <Footer />
+      </Suspense>
+    </>
+  );
+};
+
+export default Index;

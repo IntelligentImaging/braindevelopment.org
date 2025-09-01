@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero-brain-imaging.jpg";
+import heroImage from "@/assets/hero-brain-imaging.webp"; // make sure you converted this to .webp
 
 const Hero = () => {
   return (
@@ -6,22 +6,23 @@ const Hero = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden
                  pt-24 md:pt-32 scroll-mt-24 md:scroll-mt-32"
     >
-      {/* Background image as an <img> so we can control loading priority */}
+      {/* Background Hero Image */}
       <img
         src={heroImage}
-        alt=""
+        alt="MRI brain visualization background"
         aria-hidden="true"
         className="absolute inset-0 w-full h-full object-cover"
         loading="eager"
         decoding="async"
         fetchPriority="high"
       />
-      {/* Darkening gradient for readability */}
+
+      {/* Gradient overlay for readability */}
       <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/60" />
 
-      {/* Animated overlay (reduced on mobile / prefers-reduced-motion) */}
-      <div className="absolute inset-0 opacity-10 md:opacity-20">
-        <div className="w-full h-full bg-gradient-neural md:animate-pulse motion-reduce:animate-none" />
+      {/* Animated overlay (desktop only for performance) */}
+      <div className="absolute inset-0 hidden md:block opacity-20">
+        <div className="w-full h-full bg-gradient-neural animate-pulse motion-reduce:animate-none" />
       </div>
 
       {/* Content */}
@@ -31,10 +32,13 @@ const Hero = () => {
             Intelligent Medical Imaging (IMAGINE) Research Lab
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-            IMAGINE develops advanced medical imaging and analysis techniques, focusing on enhancing MRI with artificial intelligence. 
-            Their main area of work is brain and body imaging, especially fetal brain MRI, which is challenging due to unpredictable 
-            fetal and maternal movements. They create tools for analyzing brain development before and shortly after birth to better 
-            understand early brain structure, function, and neurodevelopment, particularly in cases affected by congenital or perinatal conditions.
+            IMAGINE develops advanced medical imaging and analysis techniques, focusing on
+            enhancing MRI with artificial intelligence. Their main area of work is brain and
+            body imaging, especially fetal brain MRI, which is challenging due to unpredictable
+            fetal and maternal movements. They create tools for analyzing brain development
+            before and shortly after birth to better understand early brain structure, function,
+            and neurodevelopment, particularly in cases affected by congenital or perinatal
+            conditions.
           </p>
 
           {/* Recruitment message */}
@@ -44,7 +48,7 @@ const Hero = () => {
             </p>
           </div>
 
-          {/* Stats (placeholder) */}
+          {/* Stats placeholder (optional, can be removed or filled) */}
           <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-border/20">
             <div className="text-center">
               <div className="text-3xl font-bold text-primary mb-2"></div>
