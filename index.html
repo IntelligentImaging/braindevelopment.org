@@ -1,40 +1,31 @@
-import { Suspense, lazy } from "react";
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-// Eager (critical) sections
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
+    <title>IMAGINE Research Lab – Fetal Brain Imaging with AI</title>
+    <meta name="description" content="The IMAGINE Research Lab at UCI develops AI-powered tools for fetal and neonatal brain MRI, imaging analysis, and neurodevelopment research." />
+    <link rel="canonical" href="https://braindevelopment.org/" />
 
-// Lazy-load below-the-fold sections
-const ResearchAreas = lazy(() => import("@/components/ResearchAreas"));
-const AITools       = lazy(() => import("@/components/AITools"));
-const Team          = lazy(() => import("@/components/Team"));
-const Publications  = lazy(() => import("@/components/Publications"));
-const Contact       = lazy(() => import("@/components/Contact"));
-const Footer        = lazy(() => import("@/components/Footer"));
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=2" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png?v=2" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
 
-const Index = () => {
-  return (
-    <>
-      <Header />
-      <Hero />
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="IMAGINE Research Lab – Fetal Brain Imaging with AI" />
+    <meta property="og:description" content="Advanced AI for fetal/neonatal brain MRI and imaging analysis." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://braindevelopment.org/" />
+    <meta property="og:image" content="/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/logo.png" />
+  </head>
 
-      {/* Everything below folds in as separate chunks after the hero is visible */}
-      <Suspense
-        fallback={
-          <div className="py-20 text-center text-sm text-muted-foreground">
-            Loading…
-          </div>
-        }
-      >
-        <ResearchAreas />
-        <AITools />
-        <Team />
-        <Publications />
-        <Contact />
-        <Footer />
-      </Suspense>
-    </>
-  );
-};
-
-export default Index;
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

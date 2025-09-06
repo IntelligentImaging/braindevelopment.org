@@ -66,12 +66,12 @@ const Team = () => {
     },
     {
       name: "Dr. Caitlin Rollins, MD",
-      affiliation: "Associate Professor of Neurology, Harvard Medical School,",
+      affiliation: "Associate Chief for Clinical Research, Department of Neurology, Director, Cardiac Neurodevelopmental Program, Department of Neurology, Boston Children’s Hospital",
       image: caitlinImg
     },
     {
-      name: "Dr. Lana Vasung, MD",
-      affiliation: " Boston Children’s Hospital and Harvard Medical School",
+      name: "Dr. Lana Pierotich (ex Vasung), MD,PhD, Neuroanatomist",
+      affiliation: "Boston Children’s Hospital and Harvard Medical School",
       image: lanaImg
     }
   ];
