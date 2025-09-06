@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://braindevelopment.org/sitemap.xml
+Host: braindevelopment.org
