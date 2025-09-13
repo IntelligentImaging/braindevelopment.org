@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import labImage from "@/assets/lab-equipment.jpg";
+import labImage from "@/assets/lab-equipment.avif";
 
 type Tool = {
   name: string;

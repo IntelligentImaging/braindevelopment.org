@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero-brain-imaging.jpg"; // make sure you converted this to .webp
+import heroImage from "@/assets/hero-brain-imaging.avif"; // make sure you converted this to .webp
 
 const Hero = () => {
   return (
