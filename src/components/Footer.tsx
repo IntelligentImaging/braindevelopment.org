@@ -39,8 +39,8 @@ const Footer = () => {
         
         <div className="border-t border-background/20 mt-8 pt-8 text-center">
           <p className="text-background/60 text-sm">
-            © 2024 Fetal Brain Imaging Lab. All rights reserved. 
-            Advancing prenatal care through AI innovation.
+            © 2025 IMAGINE Research Lab. All rights reserved. 
+           
           </p>
         </div>
       </div>

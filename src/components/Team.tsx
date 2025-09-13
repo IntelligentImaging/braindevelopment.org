@@ -7,7 +7,7 @@ import mahdiImg from "../assets/Mahdi.jpg";
 import qinqinImg from "../assets/qinqin.jpg";
 import xinImg from "../assets/xin.jpg";
 import ryleeImg from "../assets/Rylee.jpg";
-
+import andresimg from "../assets/Andres.jpg";
 // Collaborator images (make sure these files exist in src/assets/)
 import camiloImg from "../assets/Jaimes.jpeg";
 import jalilImg from "../assets/Razavi.jpeg";
@@ -22,6 +22,13 @@ const Team = () => {
       expertise: ["Machine Learning", "Medical Imaging", "Fetal MRI"],
       image: aliImg,
       bio: "Ali Gholipour is Professor of Radiological Sciences, and Electrical Engineering and Computer Science at the University of California Irvine (UCI), Founder and Director of the Intelligent Medical Imaging Research Lab (aka IMAGINE), and Scientific Director of MRI AI Application in the Center for Artificial Intelligence in Diagnostic Medicine (CAIDM) at UCI. He was a faculty at Boston Children’s Hospital and Harvard Medical School from 2010 to 2024 before joining UCI. He received all his degrees in Electrical Engineering (BSc’2001 and MSc’2003 from the University of Tehran, and PhD’2008 from the University of Texas at Dallas), and completed a postdoctoral training in medical imaging at Boston Children’s Hospital, Harvard Medical School in 2010. He is a Senior Member of the IEEE (Institute of Electrical and Electronics Engineers), a member of the International Society of Magnetic Resonance in Medicine (ISMRM), a member of Medical Image Computing and Computer Assisted Intervention (MICCAI); and an Associate Editor for IEEE Transactions on Medical Imaging, and Medical Image Analysis."
+    },
+      {
+      name: "Andres Saucedo, PhD",
+      role: "Associate Research Specialist",
+      expertise: ["MR spectroscopy and spectroscopic imaging","Machine Learning", "Medical Imaging"],
+      image: andresimg,
+      bio: "Andres Saucedo is an Associate Research Specialist at the University of California, Irvine. He completed his Ph.D. in 2023 from the Physics and Biology in Medicine Interdepartmental Graduate Program at UCLA, in association with the Department of Radiology at the David Geffen School of Medicine. His research focused on pulse sequence development and image reconstruction for both single voxel and multi-voxel 1D and 2D MR spectroscopy and spectroscopic imaging. He also worked on reconstruction algorithms for undersampled non-Cartesian spectroscopic imaging data, and advanced the application of ideas in diffusion-weighted NMR spectroscopy on clinical scanners. From 2023 to 2024, he was a postdoctoral fellow at the University of Southern California, where he developed a rosette free induction decay echo-planar spectroscopic imaging technique at 7T. Following his postdoctoral work, he briefly transitioned to industry in 2025 as a technical applications specialist, promoting the use of dynamic field cameras for diffusion tensor imaging and functional MRI research. As a core member of the IMAGINE group, Andres is engaged in developing, implementing, testing, and optimizing advanced MRI techniques for fetal, newborn, brain, and body imaging applications."
     },
     {
       name: "Mahdi Bagheri, PhD",
@@ -53,28 +60,31 @@ const Team = () => {
     }
   ];
 
-  const collaborators = [
-    {
-      name: "Dr. Camilo Jaimes, MD",
-      affiliation: "Chief Pediatric Neuroradiology & Physician Scientist- Massachusetts General Hospital and Harvard Medical School",
-      image: camiloImg
-    },
-    {
-      name: "Dr. Jalil Razavi, PhD",
-      affiliation: "Assistant Professor at State University of New York at Binghamton",
-      image: jalilImg
-    },
-    {
-      name: "Dr. Caitlin Rollins, MD",
-      affiliation: "Associate Chief for Clinical Research, Department of Neurology, Director, Cardiac Neurodevelopmental Program, Department of Neurology, Boston Children’s Hospital",
-      image: caitlinImg
-    },
-    {
-      name: "Dr. Lana Pierotich (ex Vasung), MD,PhD, Neuroanatomist",
-      affiliation: "Boston Children’s Hospital and Harvard Medical School",
-      image: lanaImg
-    }
+ const collaborators = [
+   {
+     name: "Dr. Camilo Jaimes, MD",
+     affiliation:
+       "Chief Pediatric Neuroradiology & Physician Scientist- Massachusetts General Hospital and Harvard Medical School",
+     image: camiloImg
+   },
+   {
+     name: "Dr. Lana Pierotich (ex Vasung), MD,PhD, Neuroanatomist",
+     affiliation: "Boston Children’s Hospital and Harvard Medical School",
+     image: lanaImg
+   },
+   {
+     name: "Dr. Jalil Razavi, PhD",
+     affiliation: "Assistant Professor at State University of New York at Binghamton",
+     image: jalilImg
+   },
+   {
+     name: "Dr. Caitlin Rollins, MD",
+     affiliation:
+       "Associate Chief for Clinical Research, Department of Neurology, Director, Cardiac Neurodevelopmental Program, Department of Neurology, Boston Children’s Hospital",
+     image: caitlinImg
+   }
   ];
+
 
   return (
     <section id="team" className="py-20 bg-gradient-subtle">
