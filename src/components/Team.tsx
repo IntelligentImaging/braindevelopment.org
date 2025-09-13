@@ -1,91 +1,94 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-// Team member images
-import aliImg from "../assets/Ali.jpg";
-import mahdiImg from "../assets/Mahdi.jpg";
-import qinqinImg from "../assets/qinqin.jpg";
-import xinImg from "../assets/xin.jpg";
-import ryleeImg from "../assets/Rylee.jpg";
-import andresimg from "../assets/Andres.jpg";
-// Collaborator images (make sure these files exist in src/assets/)
-import camiloImg from "../assets/Jaimes.jpeg";
-import jalilImg from "../assets/Razavi.jpeg";
-import caitlinImg from "../assets/Caitlin.webp";
-import lanaImg from "../assets/Pierotich.jpeg";
+// Team member images (kept as imports for a zero-friction drop-in)
+import aliImg from "../assets/Ali.avif";
+import mahdiImg from "../assets/Mahdi.avif";
+import qinqinImg from "../assets/qinqin.avif";
+import xinImg from "../assets/xin.avif";
+import ryleeImg from "../assets/Rylee.avif";
+import andresimg from "../assets/Andres.avif";
+
+// Collaborator images
+import camiloImg from "../assets/Jaimes.avif";
+import jalilImg from "../assets/Razavi.avif";
+import caitlinImg from "../assets/Caitlin.avif";
+import lanaImg from "../assets/Pierotich.avif";
+
+const AVATAR_W = 64;   // matches w-16 h-16
+const AVATAR_H = 64;
+const COLLAB_W = 80;   // matches w-20 h-20
+const COLLAB_H = 80;
+
+const members = [
+  {
+    name: "Ali Gholipour, PhD",
+    role: "Principal Investigator",
+    expertise: ["Machine Learning", "Medical Imaging", "Fetal MRI"],
+    image: aliImg,
+    bio: "Ali Gholipour is Professor of Radiological Sciences, and Electrical Engineering and Computer Science at the University of California Irvine (UCI), Founder and Director of the Intelligent Medical Imaging Research Lab (aka IMAGINE), and Scientific Director of MRI AI Application in the Center for Artificial Intelligence in Diagnostic Medicine (CAIDM) at UCI. He was a faculty at Boston Children’s Hospital and Harvard Medical School from 2010 to 2024 before joining UCI. He received all his degrees in Electrical Engineering (BSc’2001 and MSc’2003 from the University of Tehran, and PhD’2008 from the University of Texas at Dallas), and completed a postdoctoral training in medical imaging at Boston Children’s Hospital, Harvard Medical School in 2010. He is a Senior Member of the IEEE (Institute of Electrical and Electronics Engineers), a member of the International Society of Magnetic Resonance in Medicine (ISMRM), a member of Medical Image Computing and Computer Assisted Intervention (MICCAI); and an Associate Editor for IEEE Transactions on Medical Imaging, and Medical Image Analysis."
+  },
+  {
+    name: "Andres Saucedo, PhD",
+    role: "Associate Research Specialist",
+    expertise: ["MR spectroscopy and spectroscopic imaging","Machine Learning", "Medical Imaging"],
+    image: andresimg,
+    bio: "Andres Saucedo is an Associate Research Specialist at the University of California, Irvine. He completed his Ph.D. in 2023 from the Physics and Biology in Medicine Interdepartmental Graduate Program at UCLA, in association with the Department of Radiology at the David Geffen School of Medicine. His research focused on pulse sequence development and image reconstruction for both single voxel and multi-voxel 1D and 2D MR spectroscopy and spectroscopic imaging. He also worked on reconstruction algorithms for undersampled non-Cartesian spectroscopic imaging data, and advanced the application of ideas in diffusion-weighted NMR spectroscopy on clinical scanners. From 2023 to 2024, he was a postdoctoral fellow at the University of Southern California, where he developed a rosette free induction decay echo-planar spectroscopic imaging technique at 7T. Following his postdoctoral work, he briefly transitioned to industry in 2025 as a technical applications specialist, promoting the use of dynamic field cameras for diffusion tensor imaging and functional MRI research. As a core member of the IMAGINE group, Andres is engaged in developing, implementing, testing, and optimizing advanced MRI techniques for fetal, newborn, brain, and body imaging applications."
+  },
+  {
+    name: "Mahdi Bagheri, PhD",
+    role: "Postdoctoral Research Fellow",
+    expertise: ["Machine Learning", "Medical Imaging", "Causality"],
+    image: mahdiImg,
+    bio: "Mahdi Bagheri is a postdoctoral researcher at the University of California Irvine, developing machine learning methods for time series data with applications in fMRI. Previously, he was a postdoctoral researcher at Harvard Medical School, working with Professor Ali Gholipour. He earned all his degrees in Electrical Engineering and defended his Ph.D. at the University of Tehran in 2023, focusing on Bayesian causal discovery and dynamic causal learning algorithms to analyze brain data and uncover the brain’s causal connectome using fMRI and DTI data. He is passionate about translating science into practical products and is always a fan of freshly brewed tea!"
+  },
+  {
+    name: "Qinqin Yang, PhD",
+    role: "Postdoctoral Research Fellow",
+    expertise: ["MRI", "Quantitative MRI", "Deep learning", "MRI simulation", "Fetal MRI"],
+    image: qinqinImg,
+    bio: "Qinqin Yang is a postdoctoral researcher at the University of California, Irvine. He earned his Ph.D. in 2024 from Xiamen University, where he received training in MRI physics and artificial intelligence. His research focuses on developing novel motion-robust MRI sequences and reconstruction algorithms. Additionally, he explores the use of physics-based simulations to generate training data for deep neural networks. Since joining Ali’s team, his work has been dedicated to advancing innovative MRI techniques for fetal and neonatal imaging, contributing to a deeper understanding of early human brain development."
+  },
+  {
+    name: "Xin Wang, MD",
+    role: "Visiting Scholar",
+    expertise: [],
+    image: xinImg,
+    bio: "Xin Wang is a visiting scholar at the University of California, Irvine, focusing on advanced multimodal MRI studies of neonatal brain development. A dedicated radiologist and researcher, she serves as a diagnostic radiologist at Children’s Hospital of Nanjing, where she specializes in pediatric neuroimaging and brain functional studies. Prior to joining UCI, Wang earned her MD in 2011 and completed her Master of Science in Clinical Medicine at Nanjing University in 2014. Her work has been supported by the National Natural Science Foundation of China, recognizing her innovative contributions to understanding pediatric brain connectivity and function. Passionate about bridging clinical practice with cutting-edge research, she strives to translate imaging advancements into improved diagnostic tools for pediatric populations."
+  },
+  {
+    name: "Rylee Kubo",
+    role: "Research Assistant",
+    expertise: ["Computational Biology", "Bioinformatics", "Medical Imaging"],
+    image: ryleeImg,
+    bio: "Rylee graduated from the University of California, Los Angeles with a B.S. in Computational and Systems Biology with a concentration in bioinformatics. Her growing interest in medical imaging led her to intern at Cedars-Sinai Medical Center in their neurology department where she conducted quantitative MRI research relating to multiple sclerosis. In the IMAGINE lab, she assists in research coordination and exploring AI applications to medical imaging. Outside of research, she is involved in the Japanese American community and is passionate about promoting cultural pride through music."
+  }
+];
+
+const collaborators = [
+  {
+    name: "Dr. Camilo Jaimes, MD",
+    affiliation: "Chief Pediatric Neuroradiology & Physician Scientist- Massachusetts General Hospital and Harvard Medical School",
+    image: camiloImg
+  },
+  {
+    name: "Dr. Lana Pierotich (ex Vasung), MD,PhD, Neuroanatomist",
+    affiliation: "Boston Children’s Hospital and Harvard Medical School",
+    image: lanaImg
+  },
+  {
+    name: "Dr. Jalil Razavi, PhD",
+    affiliation: "Assistant Professor at State University of New York at Binghamton",
+    image: jalilImg
+  },
+  {
+    name: "Dr. Caitlin Rollins, MD",
+    affiliation: "Associate Chief for Clinical Research, Department of Neurology, Director, Cardiac Neurodevelopmental Program, Department of Neurology, Boston Children’s Hospital",
+    image: caitlinImg
+  }
+];
 
 const Team = () => {
-  const members = [
-    {
-      name: "Ali Gholipour, PhD",
-      role: "Principal Investigator",
-      expertise: ["Machine Learning", "Medical Imaging", "Fetal MRI"],
-      image: aliImg,
-      bio: "Ali Gholipour is Professor of Radiological Sciences, and Electrical Engineering and Computer Science at the University of California Irvine (UCI), Founder and Director of the Intelligent Medical Imaging Research Lab (aka IMAGINE), and Scientific Director of MRI AI Application in the Center for Artificial Intelligence in Diagnostic Medicine (CAIDM) at UCI. He was a faculty at Boston Children’s Hospital and Harvard Medical School from 2010 to 2024 before joining UCI. He received all his degrees in Electrical Engineering (BSc’2001 and MSc’2003 from the University of Tehran, and PhD’2008 from the University of Texas at Dallas), and completed a postdoctoral training in medical imaging at Boston Children’s Hospital, Harvard Medical School in 2010. He is a Senior Member of the IEEE (Institute of Electrical and Electronics Engineers), a member of the International Society of Magnetic Resonance in Medicine (ISMRM), a member of Medical Image Computing and Computer Assisted Intervention (MICCAI); and an Associate Editor for IEEE Transactions on Medical Imaging, and Medical Image Analysis."
-    },
-      {
-      name: "Andres Saucedo, PhD",
-      role: "Associate Research Specialist",
-      expertise: ["MR spectroscopy and spectroscopic imaging","Machine Learning", "Medical Imaging"],
-      image: andresimg,
-      bio: "Andres Saucedo is an Associate Research Specialist at the University of California, Irvine. He completed his Ph.D. in 2023 from the Physics and Biology in Medicine Interdepartmental Graduate Program at UCLA, in association with the Department of Radiology at the David Geffen School of Medicine. His research focused on pulse sequence development and image reconstruction for both single voxel and multi-voxel 1D and 2D MR spectroscopy and spectroscopic imaging. He also worked on reconstruction algorithms for undersampled non-Cartesian spectroscopic imaging data, and advanced the application of ideas in diffusion-weighted NMR spectroscopy on clinical scanners. From 2023 to 2024, he was a postdoctoral fellow at the University of Southern California, where he developed a rosette free induction decay echo-planar spectroscopic imaging technique at 7T. Following his postdoctoral work, he briefly transitioned to industry in 2025 as a technical applications specialist, promoting the use of dynamic field cameras for diffusion tensor imaging and functional MRI research. As a core member of the IMAGINE group, Andres is engaged in developing, implementing, testing, and optimizing advanced MRI techniques for fetal, newborn, brain, and body imaging applications."
-    },
-    {
-      name: "Mahdi Bagheri, PhD",
-      role: "Postdoctoral Research Fellow",
-      expertise: ["Machine Learning", "Medical Imaging", "Causality"],
-      image: mahdiImg,
-      bio: "Mahdi Bagheri is a postdoctoral researcher at the University of California Irvine, developing machine learning methods for time series data with applications in fMRI. Previously, he was a postdoctoral researcher at Harvard Medical School, working with Professor Ali Gholipour. He earned all his degrees in Electrical Engineering and defended his Ph.D. at the University of Tehran in 2023, focusing on Bayesian causal discovery and dynamic causal learning algorithms to analyze brain data and uncover the brain’s causal connectome using fMRI and DTI data. He is passionate about translating science into practical products and is always a fan of freshly brewed tea!"
-    },
-    {
-      name: "Qinqin Yang, PhD",
-      role: "Postdoctoral Research Fellow",
-      expertise: ["MRI", "Quantitative MRI", "Deep learning", "MRI simulation", "Fetal MRI"],
-      image: qinqinImg,
-      bio: "Qinqin Yang is a postdoctoral researcher at the University of California, Irvine. He earned his Ph.D. in 2024 from Xiamen University, where he received training in MRI physics and artificial intelligence. His research focuses on developing novel motion-robust MRI sequences and reconstruction algorithms. Additionally, he explores the use of physics-based simulations to generate training data for deep neural networks. Since joining Ali’s team, his work has been dedicated to advancing innovative MRI techniques for fetal and neonatal imaging, contributing to a deeper understanding of early human brain development."
-    },
-    {
-      name: "Xin Wang, MD",
-      role: "Visiting Scholar",
-      expertise: [],
-      image: xinImg,
-      bio: "Xin Wang is a visiting scholar at the University of California, Irvine, focusing on advanced multimodal MRI studies of neonatal brain development. A dedicated radiologist and researcher, she serves as a diagnostic radiologist at Children’s Hospital of Nanjing, where she specializes in pediatric neuroimaging and brain functional studies. Prior to joining UCI, Wang earned her MD in 2011 and completed her Master of Science in Clinical Medicine at Nanjing University in 2014. Her work has been supported by the National Natural Science Foundation of China, recognizing her innovative contributions to understanding pediatric brain connectivity and function. Passionate about bridging clinical practice with cutting-edge research, she strives to translate imaging advancements into improved diagnostic tools for pediatric populations."
-    },
-    {
-      name: "Rylee Kubo",
-      role: "Research Assistant",
-      expertise: ["Computational Biology", "Bioinformatics", "Medical Imaging"],
-      image: ryleeImg,
-      bio: "Rylee graduated from the University of California, Los Angeles with a B.S. in Computational and Systems Biology with a concentration in bioinformatics. Her growing interest in medical imaging led her to intern at Cedars-Sinai Medical Center in their neurology department where she conducted quantitative MRI research relating to multiple sclerosis. In the IMAGINE lab, she assists in research coordination and exploring AI applications to medical imaging. Outside of research, she is involved in the Japanese American community and is passionate about promoting cultural pride through music."
-    }
-  ];
-
- const collaborators = [
-   {
-     name: "Dr. Camilo Jaimes, MD",
-     affiliation:
-       "Chief Pediatric Neuroradiology & Physician Scientist- Massachusetts General Hospital and Harvard Medical School",
-     image: camiloImg
-   },
-   {
-     name: "Dr. Lana Pierotich (ex Vasung), MD,PhD, Neuroanatomist",
-     affiliation: "Boston Children’s Hospital and Harvard Medical School",
-     image: lanaImg
-   },
-   {
-     name: "Dr. Jalil Razavi, PhD",
-     affiliation: "Assistant Professor at State University of New York at Binghamton",
-     image: jalilImg
-   },
-   {
-     name: "Dr. Caitlin Rollins, MD",
-     affiliation:
-       "Associate Chief for Clinical Research, Department of Neurology, Director, Cardiac Neurodevelopmental Program, Department of Neurology, Boston Children’s Hospital",
-     image: caitlinImg
-   }
-  ];
-
-
   return (
     <section id="team" className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4">
@@ -109,9 +112,11 @@ const Team = () => {
                 <div className="flex items-start justify-between mb-2">
                   <div className="flex items-center gap-4">
                     <img 
-                      src={member.image} 
-                      alt={member.name} 
+                      src={member.image}
+                      alt={member.name}
                       className="w-16 h-16 rounded-full object-cover"
+                      width={AVATAR_W}
+                      height={AVATAR_H}
                       loading="lazy"
                       decoding="async"
                     />
@@ -164,6 +169,8 @@ const Team = () => {
                   src={c.image}
                   alt={c.name}
                   className="w-20 h-20 rounded-full object-cover mb-3"
+                  width={COLLAB_W}
+                  height={COLLAB_H}
                   loading="lazy"
                   decoding="async"
                 />

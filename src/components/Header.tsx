@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react"; // icons for open/close
+import { Menu, X } from "lucide-react"; // only these two icons are imported
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -9,7 +9,7 @@ const Header = () => {
     const el = document.getElementById("contact");
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
-      setMobileOpen(false); // close mobile menu after click
+      setMobileOpen(false);
     }
   };
 
@@ -19,11 +19,25 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo + Title */}
           <div className="flex items-center space-x-3">
-            <img
-              src="/lovable-uploads/b499ffa1-7778-43de-b318-948fe9d9bfea.png"
-              alt="Fetal Brain Imaging Lab Logo"
-              className="w-10 h-10"
-            />
+            <picture>
+              <source
+                type="image/avif"
+                srcSet="/lovable-uploads/b499ffa1-7778-43de-b318-948fe9d9bfea.avif"
+              />
+              <source
+                type="image/webp"
+                srcSet="/lovable-uploads/b499ffa1-7778-43de-b318-948fe9d9bfea.avif"
+              />
+              <img
+                src="/lovable-uploads/b499ffa1-7778-43de-b318-948fe9d9bfea.avif"
+                alt="IMAGINE Research Lab logo"
+                width={40}
+                height={40}
+                decoding="async"
+                fetchPriority="high"
+                className="w-10 h-10"
+              />
+            </picture>
             <h1 className="text-lg font-semibold text-foreground">
               IMAGINE Research Lab
             </h1>
@@ -44,7 +58,8 @@ const Header = () => {
           <button
             className="md:hidden text-foreground"
             onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Toggle Menu"
+            aria-label="Toggle menu"
+            aria-expanded={mobileOpen}
           >
             {mobileOpen ? <X size={28} /> : <Menu size={28} />}
           </button>

@@ -1,10 +1,10 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-import fetalMRIImg from "@/assets/Fetal MRI.png";
-import automatedSegmentationImg from "@/assets/automated segmentation.jpg";
-import fetalBrainAtlasesImg from "@/assets/Fetal brain atlases.jpg";
-import diffusionWeightedMRIImg from "@/assets/Diffusion-weighted MRI.jpg";
+import fetalMRIImg from "@/assets/Fetal MRI.avif";
+import automatedSegmentationImg from "@/assets/automated segmentation.avif";
+import fetalBrainAtlasesImg from "@/assets/Fetal brain atlases.avif";
+import diffusionWeightedMRIImg from "@/assets/Diffusion-weighted MRI.avif";
 
 const ResearchAreas = () => {
   const areas = [
