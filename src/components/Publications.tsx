@@ -9,8 +9,9 @@ const Publications = () => {
       authors: "Bagheri M, Velasco-Annis C, Wang J, Faghihpirayesh R, Khan S, Calixto C, Jaimes C, Vasung L, Ouaalam A, Afacan O, Warfield SK, Rollins CK, Gholipour A",
       journal: "arXiv preprint arXiv:2508.15034",
       year: "2025",
-      abstract:
+      /* abstract:
         "Accurate characterization of in-utero brain development is essential for understanding typical and atypical neurodevelopment. Building upon previous efforts to construct spatiotemporal fetal brain MRI atlases, we present the CRL-2025 fetal brain atlas, which is a spatiotemporal (4D) atlas of the developing fetal brain between 21 and 37 gestational weeks. This atlas is constructed from carefully processed MRI scans of 160 fetuses with typically-developing brains using a diffeomorphic deformable registration framework integrated with kernel regression on age. CRL-2025 uniquely includes detailed tissue segmentations, transient white matter compartments, and parcellation into 126 anatomical regions. This atlas offers significantly enhanced anatomical details over the CRL-2017 atlas, and is released along with the CRL diffusion MRI atlas with its newly created tissue segmentation and labels as well as deep learning-based multiclass segmentation models for fine-grained fetal brain MRI segmentation. The CRL-2025 atlas and its associated tools provide a robust and scalable platform for fetal brain MRI segmentation, groupwise analysis, and early neurodevelopmental research, and these materials are publicly released to support the broader research community.",
+        */
       link: "https://arxiv.org/abs/2508.15034"
     },
     {
