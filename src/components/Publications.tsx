@@ -39,7 +39,7 @@ const Publications = () => {
       authors:
         "Camilo Calixto, Matheus Dorigatti Soldatelli, Camilo Jaimes, Lana Pierotich, Simon K. Warfield, Ali Gholipour, and Davood Karimi",
       journal: "Proceedings of the National Academy of Sciences",
-      year: "2017",
+      year: "2025",
       abstract:
         "This study presents the construction of a comprehensive spatiotemporal atlas of white matter tracts in the fetal brain for every gestational week between 23 and 36 wk using diffusion MRI (dMRI). Our research leverages data collected from fetal MRI scans, capturing the dynamic changes in the brain’s architecture and microstructure during this critical period. The atlas includes 60 distinct white matter tracts, including commissural, projection, and association fibers. We employed advanced fetal dMRI processing techniques and tractography to map and characterize the developmental trajectories of these tracts. Our findings reveal that the development of these tracts is characterized by complex patterns of fractional anisotropy (FA) and mean diffusivity (MD), coinciding with the intensity of histogenic processes such as axonal growth, involution of the radial-glial scaffolding, and synaptic pruning. This atlas can serve as a useful resource for neuroscience research and clinical practice, improving our understanding of the fetal brain and potentially aiding in the early diagnosis of neurodevelopmental disorders. By detailing the normal progression of white matter tract development, the atlas can be used as a benchmark for identifying deviations that may indicate neurological anomalies or predispositions to disorders.",
       link: "https://www.pnas.org/doi/abs/10.1073/pnas.2410341121"
