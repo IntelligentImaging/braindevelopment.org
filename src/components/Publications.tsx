@@ -5,6 +5,13 @@ import { Button } from "@/components/ui/button";
 const Publications = () => {
   const publications = [
     {
+      title: "Mechanics of the Spatiotemporal Evolution of Sulcal Pits in the Folding Brain",
+      authors: "Solhtalab, A., Y. Guo, A. Gholipour, W. Dai, and M. J. Razavi",
+      journal: "Human Brain Mapping",
+      year: "2025",
+      link: "https://onlinelibrary.wiley.com/doi/pdf/10.1002/hbm.70332?msockid=0a5792b8754a613623fd84d174a2600b"
+    },
+    {
       title: "An MRI Atlas of the Human Fetal Brain: Reference and Segmentation Tools for Fetal Brain MRI Analysis",
       authors: "Bagheri M, Velasco-Annis C, Wang J, Faghihpirayesh R, Khan S, Calixto C, Jaimes C, Vasung L, Ouaalam A, Afacan O, Warfield SK, Rollins CK, Gholipour A",
       journal: "arXiv preprint arXiv:2508.15034",
@@ -15,6 +22,13 @@ const Publications = () => {
       link: "https://arxiv.org/abs/2508.15034"
     },
     {
+      title: "Variable Flip Angle Optimization for Fetal Brain Imaging With Reduced Specific Absorption Rate",
+      authors: "Franson, D., Calixto, C., Fan, H., Jaimes, C., Velasco‐Annis, C., Ferraciolli, S.F., Alves, C., Yang, E., Cauley, S. and Gholipour, A.",
+      journal: "NRM in Biomedicine",
+      year: "2025",
+      link: "https://pubmed.ncbi.nlm.nih.gov/40524483/"
+    },
+    {
       title:"Harmonization in Magnetic Resonance Imaging: A Survey of Acquisition, Image-level, and Feature-level Methods",
       authors:"Qinqin Yang, Firoozeh Shomal-Zadeh, Ali Gholipour",
       journal: "arXiv preprint arXiv:2507.16962",
@@ -23,26 +37,151 @@ const Publications = () => {
       link: "https://arxiv.org/abs/2507.16962"
     },
     {
-      title:
-        "Mechanics of the Spatiotemporal Evolution of Sulcal Pits in the Folding Brain",
-      authors:
-        "Akbar Solhtalab, Yanchen Guo, Ali Gholipour, Weiying Dai, Mir Jalil Razavi",
-      journal: "Human Brain Mapping",
+      title: "Rapid, High-resolution and Distortion-free R2* Mapping of Fetal Brain using Multi-echo Radial FLASH and Model-based Reconstruction",
+      authors: "Wang, X., Fan, H., Tan, Z., Vasylechko, S., Yang, E., Didier, R., Afacan, O., Uecker, M., Warfield, S.K. and Gholipour, A.",
+      journal: "Magnetic Resonance in Medicine",
       year: "2025",
-      abstract:
-        "Understanding the development of complex brain surface morphologies during the fetal stage is essential for uncovering mechanisms underlying brain disorders linked to abnormal cortical folding. However, knowledge of the spatiotemporal evolution of fetal brain landmarks remains limited due to the lack of longitudinal data capturing multiple timepoints for individual brains. In this study, we develop and validate an image‐based true‐scale mechanical model to investigate the spatiotemporal evolution of brain sulcal pits in individual fetal brains. Altered sulcal pits patterns have been observed in disorders such as autism spectrum disorder (ASD), polymicrogyria, Down syndrome, and agenesis of the corpus callosum. Our model, constructed using magnetic resonance imaging (MRI) scans from the first timepoint of longitudinal data, predicts the brain's surface morphology by comparing the distribution of sulcal pits between the predicted models and MRI scans from a later timepoint. This dynamic model simulates how a smooth fetal brain with primary folds evolves into a convoluted morphology. Our results align with imaging data, showing that sulcal pits are stable during brain development and can serve as key markers linking prenatal and postnatal brain characteristics. The model provides a platform for future hypothesis testing and for studying the effects of mechanical parameters on the evolution of sulcal pits in both healthy and disordered brains. This research represents a significant advancement in understanding fetal brain development and its connection to disorders that manifest as abnormal sulcal pit patterns later in life.",
-      link: "https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.70332" // ← replace with correct link if needed
+      link: "https://onlinelibrary.wiley.com/doi/10.1002/mrm.30604?msockid=0a5792b8754a613623fd84d174a2600b"
     },
     {
-      title:
-        "A detailed spatiotemporal atlas of the white matter tracts for the fetal brain",
-      authors:
-        "Camilo Calixto, Matheus Dorigatti Soldatelli, Camilo Jaimes, Lana Pierotich, Simon K. Warfield, Ali Gholipour, and Davood Karimi",
+      title: "HAITCH: A Framework for Distortion and Motion Correction in Fetal Multi-Shell Diffusion-Weighted MRI",
+      authors: "Snoussi, H., Karimi, D., Afacan, O., Utkur, M. and Gholipour, A.",
+      journal: "Imaging Neuroscience",
+      year: "2025",
+      link: "https://direct.mit.edu/imag/article/doi/10.1162/imag_a_00490/127881/HAITCH-A-Framework-for-Distortion-and-Motion"
+    },
+    {
+      title: "A Detailed Spatiotemporal Atlas of the White Matter Tracts for the Fetal Brain",
+      authors: "Calixto, C., Dorigatti Soldatelli, M., Jaimes, C., Pierotich, L., Warfield, S.K., Gholipour, A. and Karimi, D.",
       journal: "Proceedings of the National Academy of Sciences",
       year: "2025",
-      abstract:
-        "This study presents the construction of a comprehensive spatiotemporal atlas of white matter tracts in the fetal brain for every gestational week between 23 and 36 wk using diffusion MRI (dMRI). Our research leverages data collected from fetal MRI scans, capturing the dynamic changes in the brain’s architecture and microstructure during this critical period. The atlas includes 60 distinct white matter tracts, including commissural, projection, and association fibers. We employed advanced fetal dMRI processing techniques and tractography to map and characterize the developmental trajectories of these tracts. Our findings reveal that the development of these tracts is characterized by complex patterns of fractional anisotropy (FA) and mean diffusivity (MD), coinciding with the intensity of histogenic processes such as axonal growth, involution of the radial-glial scaffolding, and synaptic pruning. This atlas can serve as a useful resource for neuroscience research and clinical practice, improving our understanding of the fetal brain and potentially aiding in the early diagnosis of neurodevelopmental disorders. By detailing the normal progression of white matter tract development, the atlas can be used as a benchmark for identifying deviations that may indicate neurological anomalies or predispositions to disorders.",
-      link: "https://www.pnas.org/doi/abs/10.1073/pnas.2410341121"
+      link: "https://www.pnas.org/doi/10.1073/pnas.2410341121"
+    },
+    {
+      title: "Deep Learning Microstructure Estimation of Developing Brains from Diffusion MRI: A Newborn and Fetal Study",
+      authors: "Kebiri, H., Gholipour, A., Lin, R., Vasung, L., Calixto, C., Krsnik, Ž., Karimi, D. and Cuadra, M.B",
+      journal: "Medical Image Analysis",
+      year: "2024",
+      link: "https://pubmed.ncbi.nlm.nih.gov/38701657/"
+    },
+    {
+      title: "Advances in Fetal Brain Imaging",
+      authors: "Calixto, C., Taymourtash, A., Karimi, D., Snoussi, H., Velasco-Annis, C., Jaimes, C. and Gholipour, A.",
+      journal: "Magnetic Resonance Imaging Clinics",
+      year: "2024",
+      link: "https://pubmed.ncbi.nlm.nih.gov/38944434/"
+    },
+    {
+      title: "Heterogeneous Growth of the Insula Shapes the Human Brain",
+      authors: "Mallela, A.N., Deng, H., Gholipour, A., Warfield, S.K. and Goldschmidt, E.",
+      journal: "Proceedings of the National Academy of Sciences",
+      year: "2023",
+      link: "https://www.pnas.org/doi/10.1073/pnas.2220200120"
+    },
+    {
+      title: "Learning to Segment Fetal Brain Tissue from Noisy Annotations",
+      authors: "Karimi, D., Rollins, C.K., Velasco-Annis, C., Ouaalam, A. and Gholipour, A.",
+      journal: "Medical Image Analysis",
+      year: "2023",
+      link: "https://www.sciencedirect.com/science/article/pii/S1361841522003590"
+    },
+    {
+      title: "Fetal MRI at 3 T: Principles to Optimize Success",
+      authors: "Machado-Rivas, F., Cortes-Albornoz, M.C., Afacan, O., Bedoya, M.A., Calixto, C., Choi, J.J., Ruggiero, M., Gholipour, A. and Jaimes, C.",
+      journal: "Radiographics",
+      year: "2023",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36995947/"
+    },
+    {
+      title: "Normal Growth, Sexual Dimorphism, and Lateral Asymmetries at Fetal Brain MRI",
+      authors: "Machado-Rivas, F., Gandhi, J., Choi, J.J., Velasco-Annis, C., Afacan, O., Warfield, S.K., Gholipour, A. and Jaimes, C.",
+      journal: "Radiology",
+      year: "2022",
+      link: "https://pubmed.ncbi.nlm.nih.gov/34931857/"
+    },
+    {
+      title: "Scan-Specific Generative Neural Network for MRI Super-Resolution Reconstruction",
+      authors: "Sui, Y., Afacan, O., Jaimes, C., Gholipour, A. and Warfield, S.K.",
+      journal: "IEEE Transactions on Medical Imaging",
+      year: "2022",
+      link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9208763/"
+    },
+    {
+      title: "Brain Charts for the Human Lifespan",
+      authors: "Bethlehem, R.A., Seidlitz, J., et al.",
+      journal: "Nature",
+      year: "2022",
+      link: "https://www.nature.com/articles/s41586-022-04554-y"
+    },
+    {
+      title: "Transfer Learning in Medical Image Segmentation: New Insights from Analysis of the Dynamics of Model Parameters and Learned Representations",
+      authors: "Karimi, D., Warfield, S.K. and Gholipour, A.",
+      journal: "Artificial Intelligence in Medicine",
+      year: "2021",
+      link: "https://www.sciencedirect.com/science/article/pii/S0933365721000713"
+    },
+    {
+      title: "Regional Brain Growth Trajectories in Fetuses with Congenital Heart Disease",
+      authors: "Rollins, C.K., Ortinau, C.M., Stopp, C., Friedman, K.G., Tworetzky, W., Gagoski, B., Velasco‐Annis, C., Afacan, O., Vasung, L., Beaute, J.I., Rofeberg, V., Estroff J.A., Grant P.E., Soul J.S., Yang E., Wypij D., Gholipour A., Warfield S.K., Newburger J.W.",
+      journal: "Annals of Neurology",
+      year: "2021",
+      link: "https://pubmed.ncbi.nlm.nih.gov/33084086/"
+    },
+    {
+      title: "Deep Predictive Motion Tracking in Magnetic Resonance Imaging: Application to Fetal Imaging",
+      authors: "Singh, A., Salehi, S.S.M. and Gholipour, A.",
+      journal: "IEEE Transactions on Medical Imaging",
+      year: "2020",
+      link: "https://ieeexplore.ieee.org/document/9103624"
+    },
+    {
+      title: "Deep Learning with Noisy Labels: Exploring Techniques and Remedies in Medical Image Analysis",
+      authors: "Karimi, D., Dou, H., Warfield, S.K. and Gholipour, A.",
+      journal: "Medical Image Analysis",
+      year: "2020",
+      link: "https://www.sciencedirect.com/science/article/pii/S1361841520301237"
+    },
+    {
+      title: "In vivo Characterization of Emerging White Matter Microstructure in the Fetal Brain in the Third Trimester",
+      authors: "Jaimes, C., Machado‐Rivas, F., Afacan, O., Khan, S., Marami, B., Ortinau, C.M., Rollins, C.K., Velasco‐Annis, C., Warfield, S.K. and Gholipour, A.",
+      journal: "Human Brain Mapping",
+      year: "2020",
+      link: https://pmc.ncbi.nlm.nih.gov/articles/PMC7375105/
+    },
+    {
+      title: "A Deep Attentive Convolutional Neural Network for Automatic Cortical Plate Segmentation in Fetal MRI",
+      authors: "Dou, H., Karimi, D., Rollins, C.K., Ortinau, C.M., Vasung, L., Velasco-Annis, C., Ouaalam, A., Yang, X., Ni, D. and Gholipour, A.",
+      journal: "IEEE Transactions on Medical Imaging",
+      year: "2020",
+      link: "https://ieeexplore.ieee.org/document/9303459"
+    },
+    {
+      title: "Fetal Brain Growth Portrayed by a Spatiotemporal Diffusion Tensor MRI Atlas Computed from In-utero Images",
+      authors: "Khan, S., Vasung, L., Marami, B., Rollins, C.K., Afacan, O., Ortinau, C.M., Yang, E., Warfield, S.K. and Gholipour, A.",
+      journal: "NeuroImage",
+      year: "2019",
+      link: "https://www.sciencedirect.com/science/article/pii/S1053811918307286"
+    },
+    {
+      title: "Real-time Deep Pose Estimation with Geodesic Loss for Image-to-Template Rigid Registration",
+      authors: "Salehi, S.S.M., Khan, S., Erdogmus, D. and Gholipour, A., ",
+      journal: "IEEE Transactions on Medical Imaging",
+      year: "2018",
+      link: "https://arxiv.org/abs/1803.05982"
+    },
+    {
+      title: "Motion-Robust Diffusion-Weighted Brain MRI Reconstruction Through Slice-Level Registration-Based Motion Tracking",
+      authors: "Marami, B., Scherrer, B., Afacan, O., Erem, B., Warfield, S.K. and Gholipour, A.",
+      journal: "IEEE Transactions on Medical Imaging",
+      year: "2016",
+      link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5108524/"
+    },
+    {
+      title: "Robust Super-Resolution Volume Reconstruction from Slice Acquisitions: Application to Fetal Brain MRI",
+      authors: "Gholipour, A., Estroff, J.A. and Warfield, S.K.",
+      journal: "IEEE Transactions on Medical Imaging",
+      year: "2010",
+      link: "https://pubmed.ncbi.nlm.nih.gov/20529730/"
     }
   ];
 
