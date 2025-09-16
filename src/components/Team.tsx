@@ -72,8 +72,8 @@ const collaborators = [
     image: camiloImg
   },
   {
-    name: "Dr. Lana Pierotich (ex Vasung), MD,PhD, Neuroanatomist",
-    affiliation: "Boston Children’s Hospital and Harvard Medical School",
+    name: "Dr. Lana Pierotich (ex Vasung), MD, PhD",
+    affiliation: "Neuroanatomist at Boston Children’s Hospital and Harvard Medical School",
     image: lanaImg
   },
   {
