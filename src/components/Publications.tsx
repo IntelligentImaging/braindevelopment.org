@@ -25,9 +25,9 @@ const Publications = () => {
       title:
         "Mechanics of the Spatiotemporal Evolution of Sulcal Pits in the Folding Brain",
       authors:
-        "Haykel Snoussi, Davood Karimi, Onur Afacan, Mustafa Utkur, Ali Gholipour",
+        "Akbar Solhtalab, Yanchen Guo, Ali Gholipour, Weiying Dai, Mir Jalil Razavi",
       journal: "Human Brain Mapping",
-      year: "2045",
+      year: "2025",
       abstract:
         "Understanding the development of complex brain surface morphologies during the fetal stage is essential for uncovering mechanisms underlying brain disorders linked to abnormal cortical folding. However, knowledge of the spatiotemporal evolution of fetal brain landmarks remains limited due to the lack of longitudinal data capturing multiple timepoints for individual brains. In this study, we develop and validate an image‐based true‐scale mechanical model to investigate the spatiotemporal evolution of brain sulcal pits in individual fetal brains. Altered sulcal pits patterns have been observed in disorders such as autism spectrum disorder (ASD), polymicrogyria, Down syndrome, and agenesis of the corpus callosum. Our model, constructed using magnetic resonance imaging (MRI) scans from the first timepoint of longitudinal data, predicts the brain's surface morphology by comparing the distribution of sulcal pits between the predicted models and MRI scans from a later timepoint. This dynamic model simulates how a smooth fetal brain with primary folds evolves into a convoluted morphology. Our results align with imaging data, showing that sulcal pits are stable during brain development and can serve as key markers linking prenatal and postnatal brain characteristics. The model provides a platform for future hypothesis testing and for studying the effects of mechanical parameters on the evolution of sulcal pits in both healthy and disordered brains. This research represents a significant advancement in understanding fetal brain development and its connection to disorders that manifest as abnormal sulcal pit patterns later in life.",
       link: "https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.70332" // ← replace with correct link if needed
