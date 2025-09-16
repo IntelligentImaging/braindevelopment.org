@@ -6,7 +6,7 @@ const Publications = () => {
   const publications = [
     {
       title: "An MRI Atlas of the Human Fetal Brain: Reference and Segmentation Tools for Fetal Brain MRI Analysis",
-      authors: "Bagheri M, Velasco-Annis C, Wang J, Faghihpirayesh R, Khan S, Calixto C, Jaimes C, Vasung L, Ouaalam A, Afacan O, Warfield SK, Gholipour A",
+      authors: "Bagheri M, Velasco-Annis C, Wang J, Faghihpirayesh R, Khan S, Calixto C, Jaimes C, Vasung L, Ouaalam A, Afacan O, Warfield SK, Rollins CK, Gholipour A",
       journal: "arXiv preprint arXiv:2508.15034",
       year: "2025",
       abstract:
