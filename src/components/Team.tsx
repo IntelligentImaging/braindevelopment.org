@@ -14,6 +14,8 @@ import camiloImg from "../assets/Jaimes.avif";
 import jalilImg from "../assets/Razavi.avif";
 import caitlinImg from "../assets/Caitlin.avif";
 import lanaImg from "../assets/Pierotich.avif";
+import simonImg from "../assets/Simon.png";
+import meritxellImg from "../assets/Meritxell.png";
 
 const AVATAR_W = 64;   // matches w-16 h-16
 const AVATAR_H = 64;
@@ -93,13 +95,13 @@ const collaborators = [
   {
     name: "Dr. Simon K. Warfield, PhD",
     affiliation: "Director of Radiology, Boston Children's Hospital\nProfessor of Radiology, Harvard Medical School",
-    image: ,
+    image: simonImg,
     link: "http://crl.med.harvard.edu/labmembers/simonwarfield/"
   },
   {
     name: "Dr. Meritxell Bach Cuadra, PhD",
     affiliation: "Center for Biomedical Imaging, University of Lausanne\nRadiology Department, Lausanne University Hospital\nSignal Processing Laboratory, Ecole Polytechnique Federale de Lausanne",
-    image: ,
+    image: meritxellImg,
     link: "https://wp.unil.ch/mial/team/meritxell-bach-cuadra/"
   }
 ];
