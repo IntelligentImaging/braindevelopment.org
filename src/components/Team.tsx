@@ -14,6 +14,8 @@ import camiloImg from "../assets/Jaimes.avif";
 import jalilImg from "../assets/Razavi.avif";
 import caitlinImg from "../assets/Caitlin.avif";
 import lanaImg from "../assets/Pierotich.avif";
+import simonImg from "../assets/Simon.png";
+import meritxellImg from "../assets/Meritxell.png";
 
 const AVATAR_W = 64;   // matches w-16 h-16
 const AVATAR_H = 64;
@@ -69,22 +71,38 @@ const collaborators = [
   {
     name: "Dr. Camilo Jaimes, MD",
     affiliation: "Chief Pediatric Neuroradiology & Physician Scientist- Massachusetts General Hospital and Harvard Medical School",
-    image: camiloImg
+    image: camiloImg,
+    link: "https://scholar.google.com/citations?hl=en&user=a5AJ1NYAAAAJ&view_op=list_works"
   },
   {
-    name: "Dr. Lana Pierotich (ex Vasung), MD,PhD, Neuroanatomist",
-    affiliation: "Boston Children’s Hospital and Harvard Medical School",
-    image: lanaImg
+    name: "Dr. Lana Pierotich (ex Vasung), MD, PhD",
+    affiliation: "Neuroanatomist at Boston Children’s Hospital and Harvard Medical School",
+    image: lanaImg,
+    link: "https://scholar.google.com/citations?user=TWSexC0AAAAJ&hl=en"
   },
   {
     name: "Dr. Jalil Razavi, PhD",
-    affiliation: "Assistant Professor at State University of New York at Binghamton",
-    image: jalilImg
+    affiliation: "Associate Professor at State University of New York at Binghamton",
+    image: jalilImg,
+    link: "https://www.binghamton.edu/mechanical-engineering/people/profile.html?id=mrazavi"
   },
   {
     name: "Dr. Caitlin Rollins, MD",
-    affiliation: "Associate Chief for Clinical Research, Department of Neurology, Director, Cardiac Neurodevelopmental Program, Department of Neurology, Boston Children’s Hospital",
-    image: caitlinImg
+    affiliation: "Associate Chief for Clinical Research, Department of Neurology\nDirector, Cardiac Neurodevelopmental Program\nDepartment of Neurology, Boston Children’s Hospital",
+    image: caitlinImg,
+    link: "https://research.childrenshospital.org/researchers/caitlin-rollins"
+  },
+  {
+    name: "Dr. Simon K. Warfield, PhD",
+    affiliation: "Director of Radiology, Boston Children's Hospital\nProfessor of Radiology, Harvard Medical School",
+    image: simonImg,
+    link: "http://crl.med.harvard.edu/labmembers/simonwarfield/"
+  },
+  {
+    name: "Dr. Meritxell Bach Cuadra, PhD",
+    affiliation: "Center for Biomedical Imaging, University of Lausanne\nRadiology Department, Lausanne University Hospital\nSignal Processing Laboratory, Ecole Polytechnique Federale de Lausanne",
+    image: meritxellImg,
+    link: "https://wp.unil.ch/mial/team/meritxell-bach-cuadra/"
   }
 ];
 
@@ -176,6 +194,13 @@ const Team = () => {
                 />
                 <p className="text-sm font-medium text-foreground leading-tight">{c.name}</p>
                 <p className="text-xs text-muted-foreground">{c.affiliation}</p>
+
+                <a href={c.link} target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="sm" className="mt-3">
+                    View Profile
+                  </Button>
+                </a>
+                
               </div>
             ))}
           </div>
