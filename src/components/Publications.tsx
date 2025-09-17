@@ -146,7 +146,7 @@ const Publications = () => {
       authors: "Jaimes, C., Machado‐Rivas, F., Afacan, O., Khan, S., Marami, B., Ortinau, C.M., Rollins, C.K., Velasco‐Annis, C., Warfield, S.K. and Gholipour, A.",
       journal: "Human Brain Mapping",
       year: "2020",
-      link: https://pmc.ncbi.nlm.nih.gov/articles/PMC7375105/
+      link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7375105/
     },
     {
       title: "A Deep Attentive Convolutional Neural Network for Automatic Cortical Plate Segmentation in Fetal MRI",
