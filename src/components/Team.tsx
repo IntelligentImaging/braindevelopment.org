@@ -78,13 +78,23 @@ const collaborators = [
   },
   {
     name: "Dr. Jalil Razavi, PhD",
-    affiliation: "Assistant Professor at State University of New York at Binghamton",
+    affiliation: "Associate Professor at State University of New York at Binghamton",
     image: jalilImg
   },
   {
     name: "Dr. Caitlin Rollins, MD",
-    affiliation: "Associate Chief for Clinical Research, Department of Neurology, Director, Cardiac Neurodevelopmental Program, Department of Neurology, Boston Children’s Hospital",
+    affiliation: "Associate Chief for Clinical Research, Department of Neurology\nDirector, Cardiac Neurodevelopmental Program\nDepartment of Neurology, Boston Children’s Hospital",
     image: caitlinImg
+  },
+  {
+    name: "Dr. Simon K. Warfield, PhD",
+    affiliation: "Director of Radiology, Boston Children's Hospital\nProfessor of Radiology, Harvard Medical School",
+    image: 
+  },
+  {
+    name: "Dr. Meritxell Bach Cuadra, PhD",
+    affiliation: "Center for Biomedical Imaging, University of Lausanne\nRadiology Department, Lausanne University Hospital\nSignal Processing Laboratory, Ecole Polytechnique Federale de Lausanne",
+    image: 
   }
 ];
 
