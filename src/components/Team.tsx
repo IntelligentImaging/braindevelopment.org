@@ -94,7 +94,7 @@ const collaborators = [
   },
   {
     name: "Dr. Caitlin Rollins, MD",
-    affiliation: "Associate Chief for Clinical Research, Department of Neurology\nDirector, Cardiac Neurodevelopmental Program\nDepartment of Neurology, Boston Children’s Hospital",
+    affiliation: "Associate Chief for Clinical Research, Department of Neurology, Director, Cardiac Neurodevelopmental Program, Department of Neurology, Boston Children’s Hospital",
     image: caitlinImg
       /*
     link: "https://research.childrenshospital.org/researchers/caitlin-rollins"
@@ -102,7 +102,7 @@ const collaborators = [
   },
   {
     name: "Dr. Simon K. Warfield, PhD",
-    affiliation: "Director of Radiology, Boston Children's Hospital\nProfessor of Radiology, Harvard Medical School",
+    affiliation: "Director of Radiology, Boston Children's Hospital, Professor of Radiology, Harvard Medical School",
     image: simonImg
       /*
     link: "http://crl.med.harvard.edu/labmembers/simonwarfield/"
@@ -110,7 +110,7 @@ const collaborators = [
   },
   {
     name: "Dr. Meritxell Bach Cuadra, PhD",
-    affiliation: "Center for Biomedical Imaging, University of Lausanne\nRadiology Department, Lausanne University Hospital\nSignal Processing Laboratory, Ecole Polytechnique Federale de Lausanne",
+    affiliation: "Center for Biomedical Imaging, University of Lausanne, Radiology Department, Lausanne University Hospital, Signal Processing Laboratory, Ecole Polytechnique Federale de Lausanne",
     image: meritxellImg
       /*
     link: "https://wp.unil.ch/mial/team/meritxell-bach-cuadra/"
