@@ -71,50 +71,38 @@ const collaborators = [
   {
     name: "Dr. Camilo Jaimes, MD",
     affiliation: "Chief Pediatric Neuroradiology & Physician Scientist- Massachusetts General Hospital and Harvard Medical School",
-    image: camiloImg
-      /*
+    image: camiloImg,
     link: "https://scholar.google.com/citations?hl=en&user=a5AJ1NYAAAAJ&view_op=list_works"
-    */
   },
   {
     name: "Dr. Lana Pierotich (ex Vasung), MD, PhD",
     affiliation: "Neuroanatomist at Boston Children’s Hospital and Harvard Medical School",
-    image: lanaImg
-      /*
+    image: lanaImg,
     link: "https://scholar.google.com/citations?user=TWSexC0AAAAJ&hl=en"
-    */
   },
   {
     name: "Dr. Jalil Razavi, PhD",
     affiliation: "Associate Professor at State University of New York at Binghamton",
-    image: jalilImg
-      /*
+    image: jalilImg,
     link: "https://www.binghamton.edu/mechanical-engineering/people/profile.html?id=mrazavi"
-    */
   },
   {
     name: "Dr. Caitlin Rollins, MD",
     affiliation: "Associate Chief for Clinical Research, Department of Neurology, Director, Cardiac Neurodevelopmental Program, Department of Neurology, Boston Children’s Hospital",
-    image: caitlinImg
-      /*
+    image: caitlinImg,
     link: "https://research.childrenshospital.org/researchers/caitlin-rollins"
-    */
   },
   {
     name: "Dr. Simon K. Warfield, PhD",
     affiliation: "Director of Radiology, Boston Children's Hospital, Professor of Radiology, Harvard Medical School",
-    image: simonImg
-      /*
+    image: simonImg,
     link: "http://crl.med.harvard.edu/labmembers/simonwarfield/"
-    */
   },
   {
     name: "Dr. Meritxell Bach Cuadra, PhD",
     affiliation: "Center for Biomedical Imaging, University of Lausanne, Radiology Department, Lausanne University Hospital, Signal Processing Laboratory, Ecole Polytechnique Federale de Lausanne",
-    image: meritxellImg
-      /*
+    image: meritxellImg,
     link: "https://wp.unil.ch/mial/team/meritxell-bach-cuadra/"
-    */
   }
 ];
 
@@ -206,6 +194,15 @@ const Team = () => {
                 />
                 <p className="text-sm font-medium text-foreground leading-tight">{c.name}</p>
                 <p className="text-xs text-muted-foreground">{c.affiliation}</p>
+
+                {c.link && (
+                <button
+                  onClick={() => window.open(c.link, '_blank', 'noopener,noreferrer')}
+                  className="mt-2 px-3 py-1 text-xs bg-black text-white hover:bg-gray-800 rounded-md transition-colors cursor-pointer"
+                  >
+                  View Profile
+                </button>
+              )}
                 
               </div>
             ))}
