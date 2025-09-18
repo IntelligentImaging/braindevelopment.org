@@ -194,6 +194,15 @@ const Team = () => {
                 />
                 <p className="text-sm font-medium text-foreground leading-tight">{c.name}</p>
                 <p className="text-xs text-muted-foreground">{c.affiliation}</p>
+
+                {c.link && (
+                <button
+                  onClick={() => window.open(c.link, '_blank', 'noopener,noreferrer')}
+                  className="mt-2 px-3 py-1 text-xs bg-primary text-primary-foreground hover:bg-primary/90 rounded-md transition-colors cursor-pointer"
+                  >
+                  View Profile
+                </button>
+              )}
                 
               </div>
             ))}
