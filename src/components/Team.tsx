@@ -69,6 +69,12 @@ const members = [
 
 const collaborators = [
   {
+    name: "Dr. Meritxell Bach Cuadra, PhD",
+    affiliation: "CIBM Center for Biomedical Imaging, University of Lausanne<br />Radiology Department, Lausanne University Hospital",
+    image: meritxellImg,
+    link: "https://wp.unil.ch/mial/team/meritxell-bach-cuadra/"
+  },
+  {
     name: "Dr. Camilo Jaimes, MD",
     affiliation: "Chief Pediatric Neuroradiology & Physician Scientist- Massachusetts General Hospital and Harvard Medical School",
     image: camiloImg,
@@ -97,12 +103,6 @@ const collaborators = [
     affiliation: "Director of Radiology, Boston Children's Hospital, Professor of Radiology, Harvard Medical School",
     image: simonImg,
     link: "http://crl.med.harvard.edu/labmembers/simonwarfield/"
-  },
-  {
-    name: "Dr. Meritxell Bach Cuadra, PhD",
-    affiliation: "Center for Biomedical Imaging, University of Lausanne, Radiology Department, Lausanne University Hospital, Signal Processing Laboratory, Ecole Polytechnique Federale de Lausanne",
-    image: meritxellImg,
-    link: "https://wp.unil.ch/mial/team/meritxell-bach-cuadra/"
   }
 ];
 
