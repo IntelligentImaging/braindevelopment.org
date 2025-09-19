@@ -70,37 +70,37 @@ const members = [
 const collaborators = [
   {
     name: "Dr. Meritxell Bach Cuadra, PhD",
-    affiliation: "CIBM Center for Biomedical Imaging, University of Lausanne<br />Radiology Department, Lausanne University Hospital",
+    affiliation: "CIBM Center for Biomedical Imaging, University of Lausanne | Radiology Department, Lausanne University Hospital",
     image: meritxellImg,
     link: "https://wp.unil.ch/mial/team/meritxell-bach-cuadra/"
   },
   {
     name: "Dr. Camilo Jaimes, MD",
-    affiliation: "Chief Pediatric Neuroradiology & Physician Scientist- Massachusetts General Hospital and Harvard Medical School",
+    affiliation: "Chief Pediatric Neuroradiology & Physician Scientis, Massachusetts General Hospital and Harvard Medical School",
     image: camiloImg,
     link: "https://scholar.google.com/citations?hl=en&user=a5AJ1NYAAAAJ&view_op=list_works"
   },
   {
     name: "Dr. Lana Pierotich (ex Vasung), MD, PhD",
-    affiliation: "Neuroanatomist at Boston Children’s Hospital and Harvard Medical School",
+    affiliation: "Neuroanatomist, Boston Children’s Hospital and Harvard Medical School",
     image: lanaImg,
     link: "https://scholar.google.com/citations?user=TWSexC0AAAAJ&hl=en"
   },
   {
     name: "Dr. Jalil Razavi, PhD",
-    affiliation: "Associate Professor at State University of New York at Binghamton",
+    affiliation: "Associate Professor, State University of New York at Binghamton",
     image: jalilImg,
     link: "https://www.binghamton.edu/mechanical-engineering/people/profile.html?id=mrazavi"
   },
   {
     name: "Dr. Caitlin Rollins, MD",
-    affiliation: "Associate Chief for Clinical Research, Department of Neurology, Director, Cardiac Neurodevelopmental Program, Department of Neurology, Boston Children’s Hospital",
+    affiliation: "Associate Chief for Clinical Research, Department of Neurology | Director, Cardiac Neurodevelopmental Program | Department of Neurology, Boston Children’s Hospital",
     image: caitlinImg,
     link: "https://research.childrenshospital.org/researchers/caitlin-rollins"
   },
   {
     name: "Dr. Simon K. Warfield, PhD",
-    affiliation: "Director of Radiology, Boston Children's Hospital, Professor of Radiology, Harvard Medical School",
+    affiliation: "Director of Radiology, Boston Children's Hospital | Professor of Radiology, Harvard Medical School",
     image: simonImg,
     link: "http://crl.med.harvard.edu/labmembers/simonwarfield/"
   }
