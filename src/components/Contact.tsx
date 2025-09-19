@@ -85,7 +85,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Phone</p>
-                    <p className="text-muted-foreground text-sm">(949)824-3150</p>
+                    <p className="text-muted-foreground text-sm">(949) 824-3150</p>
                   </div>
                 </div>
               </CardContent>
