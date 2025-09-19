@@ -76,7 +76,7 @@ const collaborators = [
   },
   {
     name: "Dr. Camilo Jaimes, MD",
-    affiliation: "Chief Pediatric Neuroradiology & Physician Scientis, Massachusetts General Hospital and Harvard Medical School",
+    affiliation: "Chief Pediatric Neuroradiology & Physician Scientist, Massachusetts General Hospital and Harvard Medical School",
     image: camiloImg,
     link: "https://scholar.google.com/citations?hl=en&user=a5AJ1NYAAAAJ&view_op=list_works"
   },
