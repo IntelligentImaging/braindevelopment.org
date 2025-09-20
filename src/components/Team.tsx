@@ -100,7 +100,7 @@ const collaborators = [
   },
   {
     name: "Dr. Simon K. Warfield, PhD",
-    affiliation: "Director of Radiology, Boston Children's Hospital | Professor of Radiology, Harvard Medical School",
+    affiliation: "Thorne Gricsom Chair and Professor of Radiology, Harvard Medical School | Director of Radiology Research and Director of the Computational Radiology Lab, Boston Children's Hospital",
     image: simonImg,
     link: "http://crl.med.harvard.edu/labmembers/simonwarfield/"
   }
