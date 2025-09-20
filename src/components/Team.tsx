@@ -82,7 +82,7 @@ const collaborators = [
   },
   {
     name: "Dr. Lana Pierotich (ex Vasung), MD, PhD",
-    affiliation: "Neuroanatomist, Boston Children’s Hospital and Harvard Medical School",
+    affiliation: "Neuroanatomist | Medical Director, Atalanta Therapeutics",
     image: lanaImg,
     link: "https://scholar.google.com/citations?user=TWSexC0AAAAJ&hl=en"
   },
