@@ -26,9 +26,9 @@ const members = [
   {
     name: "Ali Gholipour, PhD",
     role: "Principal Investigator",
-    expertise: ["Machine Learning", "Medical Imaging", "Fetal MRI"],
+    expertise: ["Machine Learning", "Medical Imaging", "Medical Image Computing", "MRI", "Fetal MRI"],
     image: aliImg,
-    bio: "Ali Gholipour is Professor of Radiological Sciences, and Electrical Engineering and Computer Science at the University of California Irvine (UCI), Founder and Director of the Intelligent Medical Imaging Research Lab (aka IMAGINE), and Scientific Director of MRI AI Application in the Center for Artificial Intelligence in Diagnostic Medicine (CAIDM) at UCI. He was a faculty at Boston Children’s Hospital and Harvard Medical School from 2010 to 2024 before joining UCI. He received all his degrees in Electrical Engineering (BSc’2001 and MSc’2003 from the University of Tehran, and PhD’2008 from the University of Texas at Dallas), and completed a postdoctoral training in medical imaging at Boston Children’s Hospital, Harvard Medical School in 2010. He is a Senior Member of the IEEE (Institute of Electrical and Electronics Engineers), a member of the International Society of Magnetic Resonance in Medicine (ISMRM), a member of Medical Image Computing and Computer Assisted Intervention (MICCAI); and an Associate Editor for IEEE Transactions on Medical Imaging, and Medical Image Analysis."
+    bio: "Ali Gholipour is Professor of Radiological Sciences, Electrical Engineering and Computer Science at UCI, Founder and Director of the Intelligent Medical Imaging Research Lab (aka IMAGINE), and Scientific Director of MRI AI Application in the Center for Artificial Intelligence in Diagnostic Medicine (CAIDM). He was a faculty at Boston Children’s Hospital and Harvard Medical School from 2010 to 2024 before joining UCI. He is a Senior Member of IEEE and serves as an Associate Editor for Medical Image Analysis and IEEE Trans. Medical Imaging."
   },
   {
     name: "Andres Saucedo, PhD",
