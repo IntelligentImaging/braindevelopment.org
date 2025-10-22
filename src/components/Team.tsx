@@ -16,6 +16,7 @@ import caitlinImg from "../assets/Caitlin.avif";
 import lanaImg from "../assets/Pierotich.avif";
 import simonImg from "../assets/Simon.png";
 import meritxellImg from "../assets/Meritxell.png";
+import inderImg from "../assets/Inder.png";
 
 const AVATAR_W = 64;   // matches w-16 h-16
 const AVATAR_H = 64;
@@ -49,7 +50,7 @@ const members = [
     role: "Postdoctoral Research Fellow",
     expertise: ["MRI", "Quantitative MRI", "Deep learning", "MRI simulation", "Fetal MRI"],
     image: qinqinImg,
-    bio: "Qinqin Yang is a postdoctoral researcher at the University of California, Irvine. He earned his Ph.D. in 2024 from Xiamen University, where he received training in MRI physics and artificial intelligence. His research focuses on developing novel motion-robust MRI sequences and reconstruction algorithms. Additionally, he explores the use of physics-based simulations to generate training data for deep neural networks. Since joining Ali’s team, his work has been dedicated to advancing innovative MRI techniques for fetal and neonatal imaging, contributing to a deeper understanding of early human brain development."
+    bio: "Qinqin Yang is a postdoctoral researcher at the University of California, Irvine. He earned his Ph.D. in 2024 from Xiamen University, where he received training in MRI physics and artificial intelligence. His research focuses on developing novel motion-robust MRI sequences and deep learning–based reconstruction/enhancement methods. Since joining the IMAGINE team, his work has been dedicated to advancing innovative MRI techniques for fetal and neonatal imaging."
   },
   {
     name: "Xin Wang, MD",
@@ -63,7 +64,7 @@ const members = [
     role: "Research Assistant",
     expertise: ["Computational Biology", "Bioinformatics", "Medical Imaging"],
     image: ryleeImg,
-    bio: "Rylee graduated from the University of California, Los Angeles with a B.S. in Computational and Systems Biology with a concentration in bioinformatics. Her growing interest in medical imaging led her to intern at Cedars-Sinai Medical Center in their neurology department where she conducted quantitative MRI research relating to multiple sclerosis. In the IMAGINE lab, she assists in research coordination and exploring AI applications to medical imaging. Outside of research, she is involved in the Japanese American community and is passionate about promoting cultural pride through music."
+    bio: "Rylee graduated from the University of California, Los Angeles with a B.S. in Computational and Systems Biology with a concentration in bioinformatics. Her growing interest in medical imaging led her to intern at Cedars-Sinai Medical Center in their neurology department where she conducted quantitative MRI research relating to multiple sclerosis. In the IMAGINE lab, she assists in research coordination and exploring AI applications to medical imaging."
   }
 ];
 
@@ -76,15 +77,21 @@ const collaborators = [
   },
   {
     name: "Dr. Camilo Jaimes, MD",
-    affiliation: "Chief Pediatric Neuroradiology & Physician Scientist, Massachusetts General Hospital and Harvard Medical School",
+    affiliation: "Chief of Pediatric Neuroradiology & Co-Director of Pediatric Imaging Research Center, Massachusetts General Brigham | Associate Chair of Imaging Sciences & Associate Professor of Radiology, Massachusetts General Hospital",
     image: camiloImg,
     link: "https://scholar.google.com/citations?hl=en&user=a5AJ1NYAAAAJ&view_op=list_works"
+  },
+  {
+    name: "Dr. Terrie Inder, MD",
+    affiliation: "Director of Center for Neonatal Research, Rady Children's Health",
+    image: inderImg,
+    link: "https://scholar.google.com/citations?user=TWSexC0AAAAJ&hl=en"
   },
   {
     name: "Dr. Lana Pierotich (ex Vasung), MD, PhD",
     affiliation: "Neuroanatomist | Medical Director, Atalanta Therapeutics",
     image: lanaImg,
-    link: "https://scholar.google.com/citations?user=TWSexC0AAAAJ&hl=en"
+    link: "https://choc.org/medical-staff/neonatology/terrie-inder-md/"
   },
   {
     name: "Dr. Jalil Razavi, PhD",
