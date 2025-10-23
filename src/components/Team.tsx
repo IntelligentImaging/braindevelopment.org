@@ -83,7 +83,7 @@ const collaborators = [
   },
   {
     name: "Dr. Terrie Inder, MD",
-    affiliation: "Director of Center for Neonatal Research, Rady Children's Health",
+    affiliation: "Director of Center for Neonatal Research, Neonatologist and Child Neurologist, Rady Children's Health",
     image: inderImg,
     link: "https://scholar.google.com/citations?user=TWSexC0AAAAJ&hl=en"
   },
