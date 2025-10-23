@@ -43,7 +43,7 @@ const members = [
     role: "Postdoctoral Research Fellow",
     expertise: ["Machine Learning", "Medical Imaging", "Causality"],
     image: mahdiImg,
-    bio: "Mahdi Bagheri is a postdoctoral researcher at the University of California Irvine, developing machine learning methods for time series data with applications in fMRI. Previously, he was a postdoctoral researcher at Harvard Medical School, working with Professor Ali Gholipour. He earned all his degrees in Electrical Engineering and defended his Ph.D. at the University of Tehran in 2023, focusing on Bayesian causal discovery and dynamic causal learning algorithms to analyze brain data and uncover the brain’s causal connectome using fMRI and DTI data. He is passionate about translating science into practical products and is always a fan of freshly brewed tea!"
+    bio: "Mahdi Bagheri is a postdoctoral researcher at UC Irvine, developing machine learning methods for time series analysis in fMRI. He was a postdoc at Harvard Medical School with Prof. Ali Gholipour and earned his Ph.D. in Electrical Engineering from the University of Tehran in 2023, focusing on Bayesian causal discovery for brain data. He’s passionate about turning science into real-world applications—and enjoys a good cup of tea."
   },
   {
     name: "Qinqin Yang, PhD",
