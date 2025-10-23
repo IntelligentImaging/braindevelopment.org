@@ -17,6 +17,7 @@ import lanaImg from "../assets/Pierotich.avif";
 import simonImg from "../assets/Simon.png";
 import meritxellImg from "../assets/Meritxell.png";
 import inderImg from "../assets/Inder.png";
+import ortinauImg from "../assets/Ortinau.png";
 
 const AVATAR_W = 64;   // matches w-16 h-16
 const AVATAR_H = 64;
@@ -86,6 +87,12 @@ const collaborators = [
     affiliation: "Director of Center for Neonatal Research, Neonatologist and Child Neurologist, Rady Children's Health",
     image: inderImg,
     link: "https://scholar.google.com/citations?user=TWSexC0AAAAJ&hl=en"
+  },
+  {
+    name: "Dr. Cynthia M. Ortinau, MD",
+    affiliation: "Neonatal-perinatal Pediatric Medicine, St. Louis Children's Hospital | Assistant Professor of Pediatrics, Newborn Medicine, Washington University in St. Louis",
+    image: ortinauImg,
+    link: "https://physicians.wustl.edu/people/cynthia-m-ortinau-md/"
   },
   {
     name: "Dr. Lana Pierotich (ex Vasung), MD, PhD",
