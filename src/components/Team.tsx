@@ -72,25 +72,25 @@ const members = [
 const collaborators = [
   {
     name: "Dr. Meritxell Bach Cuadra, PhD",
-    affiliation: "CIBM Center for Biomedical Imaging, University of Lausanne | Radiology Department, Lausanne University Hospital",
+    affiliation: "Associate Professor, CIBM Center for Biomedical Imaging, University of Lausanne | Radiology Department, Lausanne University Hospital",
     image: meritxellImg,
     link: "https://wp.unil.ch/mial/team/meritxell-bach-cuadra/"
   },
   {
     name: "Dr. Camilo Jaimes, MD",
-    affiliation: "Chief of Pediatric Neuroradiology & Co-Director of Pediatric Imaging Research Center, Massachusetts General Brigham | Associate Chair of Imaging Sciences & Associate Professor of Radiology, Massachusetts General Hospital",
+    affiliation: "Neuroradiologist, Chief of Pediatric Neuroradiology & Co-Director of Pediatric Imaging Research Center, Massachusetts General Brigham | Associate Chair of Imaging Sciences & Associate Professor of Radiology, Massachusetts General Hospital",
     image: camiloImg,
     link: "https://scholar.google.com/citations?hl=en&user=a5AJ1NYAAAAJ&view_op=list_works"
   },
   {
     name: "Dr. Terrie Inder, MD",
-    affiliation: "Director of Center for Neonatal Research, Neonatologist and Child Neurologist, Rady Children's Health",
+    affiliation: "Neonatologist and Child Neurologist, Director of Center for Neonatal Research, Rady Children's Health (Children's Hospital of Orange County) | Professor of Pediatrics, University of California Irvine",
     image: inderImg,
     link: "https://scholar.google.com/citations?user=TWSexC0AAAAJ&hl=en"
   },
   {
     name: "Dr. Cynthia M. Ortinau, MD",
-    affiliation: "Neonatal-perinatal Pediatric Medicine, St. Louis Children's Hospital | Assistant Professor of Pediatrics, Newborn Medicine, Washington University in St. Louis",
+    affiliation: "Neonatologist, Neonatal-perinatal Pediatric Medicine, St. Louis Children's Hospital | Assistant Professor of Pediatrics, Newborn Medicine, Washington University in St. Louis",
     image: ortinauImg,
     link: "https://physicians.wustl.edu/people/cynthia-m-ortinau-md/"
   },
@@ -108,7 +108,7 @@ const collaborators = [
   },
   {
     name: "Dr. Caitlin Rollins, MD",
-    affiliation: "Associate Chief for Clinical Research, Department of Neurology | Director, Cardiac Neurodevelopmental Program | Department of Neurology, Boston Children’s Hospital",
+    affiliation: "Neurologist, Associate Chief for Clinical Research, Department of Neurology | Director, Cardiac Neurodevelopmental Program | Department of Neurology, Boston Children’s Hospital | Associate Professor of Neurology, Harvard Medical School",
     image: caitlinImg,
     link: "https://research.childrenshospital.org/researchers/caitlin-rollins"
   },
