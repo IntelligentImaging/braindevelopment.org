@@ -34,7 +34,7 @@ const Hero = () => {
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
             IMAGINE develops advanced medical imaging and analysis techniques, focusing on
             enhancing MRI with artificial intelligence. Their main area of work is brain and
-            body imaging, especially fetal brain MRI, which is challenging due to unpredictable
+            body imaging, including, in particular, fetal brain MRI, which is challenging due to unpredictable
             fetal and maternal movements. They create tools for analyzing brain development
             before and shortly after birth to better understand early brain structure, function,
             and neurodevelopment, particularly in cases affected by congenital or perinatal
@@ -44,7 +44,7 @@ const Hero = () => {
           {/* Recruitment message */}
           <div className="mt-10">
             <p className="text-3xl md:text-4xl font-bold italic text-white drop-shadow-lg">
-              We are actively looking for motivated PhD and Postdoc researchers!
+              If you are a researcher interested in joining our group, please contact us!
             </p>
           </div>
 
