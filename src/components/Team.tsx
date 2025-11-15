@@ -128,10 +128,8 @@ const Team = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-foreground">Our Research Group</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            
           </p>
         </div>
-        //A multidisciplinary group of clinicians, researchers, and engineers working together to advance fetal brain imaging through AI innovation.
         
         {/* Team members grid */}
         <div className="grid md:grid-cols-2 gap-8">
