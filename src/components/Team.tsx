@@ -131,8 +131,7 @@ const Team = () => {
             
           </p>
         </div>
-        /* A multidisciplinary group of clinicians, researchers, and engineers 
-            working together to advance fetal brain imaging through AI innovation.*/
+        //A multidisciplinary group of clinicians, researchers, and engineers working together to advance fetal brain imaging through AI innovation.
         
         {/* Team members grid */}
         <div className="grid md:grid-cols-2 gap-8">
