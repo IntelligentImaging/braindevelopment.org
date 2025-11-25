@@ -30,7 +30,7 @@ const members = [
     role: "Principal Investigator",
     expertise: ["Machine Learning", "Medical Imaging", "Medical Image Computing", "MRI", "Fetal MRI"],
     image: aliImg,
-    bio: "Ali Gholipour is Professor of Radiological Sciences, Electrical Engineering and Computer Science at UCI, Founder and Director of the Intelligent Medical Imaging Research Lab (aka IMAGINE), Scientific Director of MRI AI Application in the Center for Artificial Intelligence at UCI, and a Visiting Scientist at Rady Children's Health (Children's Hospital of Orange County). He was a research faculty at Boston Children’s Hospital and Harvard Medical School from 2010 to 2024 before joining UCI. He is a Senior Member of IEEE and serves as an Associate Editor for Medical Image Analysis and IEEE Trans. Medical Imaging."
+    bio: "Ali Gholipour is Professor of Radiological Sciences, Electrical Engineering and Computer Science at UCI, Founder and Director of the Intelligent Medical Imaging Research Lab (aka IMAGINE), Scientific Director of MRI AI Applications in the Center for Applied Artificial Intelligence Research (A2IR) at UCI, and a Visiting Scientist at Rady Children's Health (Children's Hospital of Orange County). He was a research faculty at Boston Children’s Hospital and Harvard Medical School from 2010 to 2024 before joining UCI. He is a Senior Member of the IEEE and a member of the ISMRM and MICCAI society, and serves as an Associate Editor for Medical Image Analysis and the IEEE Transactions on Medical Imaging."
   },
   {
     name: "Andres Saucedo, PhD",
