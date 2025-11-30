@@ -28,7 +28,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-6xl md:text-8xl font-extrabold mb-8 text-white drop-shadow-xl">
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-8 text-white drop-shadow-xl">
             Intelligent Medical Imaging (IMAGINE) Research Lab
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
@@ -43,7 +43,7 @@ const Hero = () => {
 
           {/* Recruitment message */}
           <div className="mt-10">
-            <p className="text-3xl md:text-4xl font-bold italic text-white drop-shadow-lg">
+            <p className="text-2xl md:text-3xl font-bold italic text-white drop-shadow-lg">
               If you are a researcher interested in joining our group, please contact us!
             </p>
           </div>
