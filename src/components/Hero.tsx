@@ -28,7 +28,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-8 text-white drop-shadow-xl">
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-8 text-white drop-shadow-xl">
             Intelligent Medical Imaging (IMAGINE) Research Lab
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
