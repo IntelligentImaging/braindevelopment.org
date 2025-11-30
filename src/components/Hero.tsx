@@ -43,7 +43,7 @@ const Hero = () => {
 
           {/* Recruitment message */}
           <div className="mt-10">
-            <p className="text-2xl md:text-3xl font-bold italic text-white drop-shadow-lg">
+            <p className="text-2xl md:text-2xl font-bold italic text-white drop-shadow-lg">
               If you are a researcher interested in joining our group, please contact us!
             </p>
           </div>
