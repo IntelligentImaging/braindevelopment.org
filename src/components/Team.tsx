@@ -5,9 +5,10 @@ import { Badge } from "@/components/ui/badge";
 import aliImg from "../assets/Ali.avif";
 import mahdiImg from "../assets/Mahdi.avif";
 import qinqinImg from "../assets/qinqin.avif";
-import xinImg from "../assets/xin.avif";
+import nuoweiImg from "../assets/Nuowei.jpg";
 import ryleeImg from "../assets/Rylee.avif";
 import andresimg from "../assets/Andres.avif";
+//import xinImg from "../assets/xin.avif";
 
 // Collaborator images
 import camiloImg from "../assets/Jaimes.avif";
@@ -54,20 +55,28 @@ const members = [
     bio: "Qinqin Yang is a postdoctoral researcher at the University of California, Irvine. He earned his Ph.D. in 2024 from Xiamen University, where he received training in MRI physics and artificial intelligence. His research focuses on developing novel motion-robust MRI sequences and deep learning–based reconstruction/enhancement methods. Since joining the IMAGINE team, his work has been dedicated to advancing innovative MRI techniques for fetal and neonatal imaging."
   },
   {
-    name: "Xin Wang, MD",
-    role: "Visiting Scholar",
-    expertise: [],
-    image: xinImg,
-    bio: "Xin Wang is a visiting scholar at the University of California, Irvine, focusing on advanced multimodal MRI studies of neonatal brain development. A dedicated radiologist and researcher, she serves as a diagnostic radiologist at Children’s Hospital of Nanjing, where she specializes in pediatric neuroimaging and brain functional studies. Prior to joining UCI, Wang earned her MD in 2011 and completed her Master of Science in Clinical Medicine at Nanjing University in 2014. Her work has been supported by the National Natural Science Foundation of China, recognizing her innovative contributions to understanding pediatric brain connectivity and function. Passionate about bridging clinical practice with cutting-edge research, she strives to translate imaging advancements into improved diagnostic tools for pediatric populations."
+    name: "Nuowei Ge, PhD",
+    role: "Assistant Specialist",
+    expertise: ["Quantitative MRI", "Fetal and Neonatal MRI", "Early Brain Development"],
+    image: nuoweiImg,
+    bio: "Nuowei Ge is an Assistant Specialist at the University of California, Irvine. She began her research training in MRI at Xiamen University. Her research focuses on developing advanced quantitative MRI methods for in vivo fetal, neonatal, and infant brain imaging. Her work includes pulse sequence optimization, image reconstruction, and clinical translation. Since the beginning of her research career, she has aimed to advance fetal and infant MRI techniques to deepen the understanding of early human brain development."
   },
   {
     name: "Rylee Kubo",
-    role: "Research Assistant",
+    role: "Research Assistant / Clinical Research Coordinator",
     expertise: ["Computational Biology", "Bioinformatics", "Medical Imaging"],
     image: ryleeImg,
     bio: "Rylee graduated from the University of California, Los Angeles with a B.S. in Computational and Systems Biology with a concentration in bioinformatics. Her growing interest in medical imaging led her to intern at Cedars-Sinai Medical Center in their neurology department where she conducted quantitative MRI research relating to multiple sclerosis. In the IMAGINE lab, she assists in research coordination and exploring AI applications to medical imaging."
   }
 ];
+
+/*{
+    name: "Xin Wang, MD",
+    role: "Visiting Scholar",
+    expertise: [],
+    image: xinImg,
+    bio: "Xin Wang is a visiting scholar at the University of California, Irvine, focusing on advanced multimodal MRI studies of neonatal brain development. A dedicated radiologist and researcher, she serves as a diagnostic radiologist at Children’s Hospital of Nanjing, where she specializes in pediatric neuroimaging and brain functional studies. Prior to joining UCI, Wang earned her MD in 2011 and completed her Master of Science in Clinical Medicine at Nanjing University in 2014. Her work has been supported by the National Natural Science Foundation of China, recognizing her innovative contributions to understanding pediatric brain connectivity and function. Passionate about bridging clinical practice with cutting-edge research, she strives to translate imaging advancements into improved diagnostic tools for pediatric populations."
+  },*/
 
 const collaborators = [
   {
