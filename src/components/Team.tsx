@@ -7,7 +7,7 @@ import mahdiImg from "../assets/Mahdi.avif";
 import qinqinImg from "../assets/qinqin.avif";
 import nuoweiImg from "../assets/Nuowei.jpg";
 import ryleeImg from "../assets/Rylee.avif";
-import andresimg from "../assets/Andres.avif";
+//import andresimg from "../assets/Andres.avif";
 //import xinImg from "../assets/xin.avif";
 
 // Collaborator images
@@ -32,13 +32,6 @@ const members = [
     expertise: ["Machine Learning", "Medical Imaging", "Medical Image Computing", "MRI", "Fetal MRI"],
     image: aliImg,
     bio: "Ali Gholipour is Professor of Radiological Sciences, Electrical Engineering and Computer Science at UCI, Founder and Director of the Intelligent Medical Imaging Research Lab (aka IMAGINE), Scientific Director of MRI AI Applications in the Center for Applied Artificial Intelligence Research (A2IR) at UCI, and a Visiting Scientist at Rady Children's Health (Children's Hospital of Orange County). He was a research faculty at Boston Children’s Hospital and Harvard Medical School from 2010 to 2024 before joining UCI. He is a Senior Member of the IEEE and a member of the ISMRM and MICCAI society, and serves as an Associate Editor for Medical Image Analysis and the IEEE Transactions on Medical Imaging."
-  },
-  {
-    name: "Andres Saucedo, PhD",
-    role: "Associate Specialist",
-    expertise: ["MR spectroscopy and spectroscopic imaging","Machine Learning", "Medical Imaging"],
-    image: andresimg,
-    bio: "Andres Saucedo is an Associate Research Specialist at the University of California, Irvine. He completed his Ph.D. from the Physics and Biology in Medicine Interdepartmental Graduate Program at UCLA in 2023. His research focused on pulse sequence development, image reconstruction, and quantitative data processing for MR spectroscopy and spectroscopic imaging. As postdoctoral fellow at the University of Southern California from 2023-2024, he developed a spectroscopic imaging method for neuroscience applications at 7T. Following his postdoctoral work, he briefly transitioned to industry in 2025, promoting the use of dynamic field cameras for MRI research. As a core member of the IMAGINE group, Andres is engaged in developing, implementing, testing, and optimizing advanced MRI and MRS techniques for fetal, newborn, brain, and body imaging applications."
   },
   {
     name: "Mahdi Bagheri, PhD",
@@ -76,7 +69,15 @@ const members = [
     expertise: [],
     image: xinImg,
     bio: "Xin Wang is a visiting scholar at the University of California, Irvine, focusing on advanced multimodal MRI studies of neonatal brain development. A dedicated radiologist and researcher, she serves as a diagnostic radiologist at Children’s Hospital of Nanjing, where she specializes in pediatric neuroimaging and brain functional studies. Prior to joining UCI, Wang earned her MD in 2011 and completed her Master of Science in Clinical Medicine at Nanjing University in 2014. Her work has been supported by the National Natural Science Foundation of China, recognizing her innovative contributions to understanding pediatric brain connectivity and function. Passionate about bridging clinical practice with cutting-edge research, she strives to translate imaging advancements into improved diagnostic tools for pediatric populations."
-  },*/
+  },
+  {
+    name: "Andres Saucedo, PhD",
+    role: "Associate Specialist",
+    expertise: ["MR spectroscopy and spectroscopic imaging","Machine Learning", "Medical Imaging"],
+    image: andresimg,
+    bio: "Andres Saucedo is an Associate Research Specialist at the University of California, Irvine. He completed his Ph.D. from the Physics and Biology in Medicine Interdepartmental Graduate Program at UCLA in 2023. His research focused on pulse sequence development, image reconstruction, and quantitative data processing for MR spectroscopy and spectroscopic imaging. As postdoctoral fellow at the University of Southern California from 2023-2024, he developed a spectroscopic imaging method for neuroscience applications at 7T. Following his postdoctoral work, he briefly transitioned to industry in 2025, promoting the use of dynamic field cameras for MRI research. As a core member of the IMAGINE group, Andres is engaged in developing, implementing, testing, and optimizing advanced MRI and MRS techniques for fetal, newborn, brain, and body imaging applications."
+  },
+  */
 
 const collaborators = [
   {
