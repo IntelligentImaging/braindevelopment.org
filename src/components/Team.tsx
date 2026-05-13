@@ -100,9 +100,9 @@ const collaborators = [
   },
   {
     name: "Dr. Cynthia M. Ortinau, MD",
-    affiliation: "Neonatologist, Neonatal-perinatal Pediatric Medicine, St. Louis Children's Hospital | Assistant Professor of Pediatrics, Newborn Medicine, Washington University in St. Louis",
+    affiliation: "Associate Professor & Chief of the Division of Neonatology and Newborn Nursery, University of Wisconsin School of Medicine and Public Health",
     image: ortinauImg,
-    link: "https://physicians.wustl.edu/people/cynthia-m-ortinau-md/"
+    link: "https://www.pediatrics.wisc.edu/staff/ortinau-md-msci-cynthia-cindy/"
   },
   {
     name: "Dr. Lana Pierotich (ex Vasung), MD, PhD",
