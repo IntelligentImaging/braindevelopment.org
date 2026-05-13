@@ -96,7 +96,7 @@ const collaborators = [
     name: "Dr. Terrie Inder, MD",
     affiliation: "Neonatologist and Child Neurologist, Director of Center for Neonatal Research, Rady Children's Health (Children's Hospital of Orange County) | Professor of Pediatrics, University of California Irvine",
     image: inderImg,
-    link: "https://scholar.google.com/citations?user=TWSexC0AAAAJ&hl=en"
+    link: "https://choc.org/medical-staff/neonatology/terrie-inder-md/"
   },
   {
     name: "Dr. Cynthia M. Ortinau, MD",
@@ -108,7 +108,7 @@ const collaborators = [
     name: "Dr. Lana Pierotich (ex Vasung), MD, PhD",
     affiliation: "Neuroanatomist | Medical Director, Atalanta Therapeutics",
     image: lanaImg,
-    link: "https://choc.org/medical-staff/neonatology/terrie-inder-md/"
+    link: "https://scholar.google.com/citations?user=TWSexC0AAAAJ&hl=en"
   },
   {
     name: "Dr. Jalil Razavi, PhD",
