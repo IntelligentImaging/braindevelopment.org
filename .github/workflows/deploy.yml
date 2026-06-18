@@ -22,13 +22,12 @@ jobs:
           npm ci
           npm run build
 
-      - name: FTP Deploy to Hostinger
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: SFTP Deploy to Hostinger
+        uses: appleboy/scp-action@v0.1.7
         with:
-          server: ${{ secrets.FTP_SERVER }}
+          host: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/  # Vite outputs production files here
-          server-dir: /public_html/
-          protocol: sftp
           port: 22
+          source: ./dist/*
+          target: /public_html/
