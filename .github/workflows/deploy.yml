@@ -31,4 +31,4 @@ jobs:
           local-dir: ./dist/  # Vite outputs production files here
           server-dir: /public_html/
           protocol: sftp
-          port: 21
+          port: 22
